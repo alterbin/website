@@ -1,6 +1,14 @@
-import './globals.css'
+import '../../public/fonts/GeneralSans_Complete/Fonts/WEB/css/general-sans.css'
+import '../../public/fonts/TrenchSlab_Complete/Fonts/WEB/css/trench-slab.css'
+
+import '../../public/css/bootstrap.min.css'
+import '../../public/scss/main.scss'
+import '../../public/scss/main.scss'
+
 import type { Metadata } from 'next'
+import Head from 'next/head'
 import { Inter } from 'next/font/google'
+import generateColorsCss from '@/utils/colors'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <style>{generateColorsCss()}</style>
+      </Head>
+
       <body className={inter.className}>{children}</body>
     </html>
   )
