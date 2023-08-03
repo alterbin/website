@@ -7,6 +7,22 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  @media screen and (max-width: 997px) {
+    display: none;
+  }
+
+  &--mobile {
+    @extend .app_landing_page;
+
+    display: none;
+
+    @media screen and (max-width: 997px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 :root {

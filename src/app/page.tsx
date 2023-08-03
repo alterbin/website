@@ -13,6 +13,7 @@ const routes = [
 
 export default function Page() {
   return (
+    <>
     <main className="app_landing_page">
       <header className="app__header app_landing_page__px">
         <Image className="app__header__logo" src="/media/logos/h-logo2.svg" width={147} height={35} alt="" priority />
@@ -71,6 +72,13 @@ export default function Page() {
 
       <Footer />
     </main>
+
+    <main className="app_landing_page--mobile">
+      <Typography color="main-color" variant="h5">
+        Mobile view n/a
+      </Typography>
+    </main>
+    </>
   )
 }
 
