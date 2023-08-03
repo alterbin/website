@@ -1,12 +1,13 @@
 export const rootColors = {
-  'random-rdm-grn': '#62B19E',
-  'lights-success': '#F1F9F4',
-  'text-primary': '#272930',
+  'main-color': '#06382E',
+  'sec-color': '#DD9940',
+  'text-color': '#333',
+  'sub-text-color': '#8B8787',
 };
 
 export type Color = ReturnType<() => typeof rootColors>
 
-export default function generateColorsCss () {
+export default function generateColorsCss () {  
   let css = '';
   let rootVariables = '';
 

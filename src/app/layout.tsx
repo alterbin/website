@@ -2,6 +2,7 @@ import '../../public/fonts/GeneralSans_Complete/Fonts/WEB/css/general-sans.css'
 import '../../public/fonts/TrenchSlab_Complete/Fonts/WEB/css/trench-slab.css'
 
 import '../../public/css/bootstrap.min.css'
+import '../../public/css/colors.css'
 import '../../public/scss/main.scss'
 import '../../public/scss/main.scss'
 

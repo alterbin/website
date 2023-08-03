@@ -60,6 +60,31 @@
   }
 }
 
+.app_footer {
+  background: var(--text-color);
+  min-height: 430px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__btm {
+    border-top: 0.5px solid #fff;
+    color: #FEFEFE;
+    padding: 16px 10px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__socials {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
 .app_hero_section {
   min-height: calc(100vh - 10px);
 
@@ -275,5 +300,114 @@
 
   .app_hero_section__content__txt__action {
     text-decoration: none;
+  }
+}
+
+.app_events {
+  padding: 80px 0;
+  
+  &__con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .app_mission__top__h3 {
+      @extend .app_mission__top__h2;
+
+      font-size: 35px;
+    }
+
+    .app_mission__top__p {
+      position: relative;
+      margin-bottom: 40px !important;
+
+      svg {
+        position: absolute;
+        top: -20px;
+      }
+    }
+
+    &__evt {
+      margin-bottom: 50px;
+      gap: 20px;
+    }
+
+    &__evt_a {
+      border-radius: 50px;
+      background: #FFF9F1;
+      min-width: 168px;
+      padding: 14px 27px;
+      text-decoration: none;
+      text-align: center;
+
+      span {
+        font-size: 14px;
+      }
+
+      &--disabled {
+        @extend .app_events__con__evt_a;
+
+        background: #F5F5F5;
+
+        span {
+          color: #C0C0C0 !important;
+        }
+      }
+    }
+
+    &__gallery {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 100px;
+
+      .card {
+        background-color: #fff;
+        border: none;
+        border-radius: 18.953px;
+        filter: drop-shadow(0px 18.952880859375px 47.382198333740234px rgba(119, 115, 170, 0.10));
+        min-width: 383px;
+        width: 383px;
+      }
+
+      .card-body {
+        display: flex;
+        gap: 24px;
+      }
+
+      &__img {
+        border-radius: 18.953px 18.953px 0px 0px;
+        background: lightgray 50% / cover no-repeat;
+      }
+
+      &__date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__month {
+        font-size: 12px;
+      }
+
+      &__h3 {
+        font-size: 25px;
+      }
+
+      &__h5 {
+        font-size: 16px;
+        margin-bottom: 9.5px !important;
+      }
+
+      &__span {
+        font-size: 14px;
+      }
+    }
+
+    &__organizations {
+      display: flex;
+      justify-content: center;
+      overflow-x: auto;
+    }
   }
 }

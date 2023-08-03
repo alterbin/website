@@ -1,7 +1,7 @@
 'use client'
 
-import { Typography } from '@/components'
-import { Initiatives, Mission } from '@/components/landing';
+import { Footer, Typography } from '@/components'
+import { Events, Initiatives, Mission } from '@/components/landing';
 import Image from 'next/image'
 
 const routes = [
@@ -67,11 +67,9 @@ export default function Page() {
 
       <Initiatives />
 
-      <div className="app_events">
-        <div className="app_landing_page__px">
-          {/* Events */}
-        </div>
-      </div>
+      <Events />
+
+      <Footer />
     </main>
   )
 }
