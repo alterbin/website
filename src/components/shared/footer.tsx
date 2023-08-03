@@ -1,9 +1,32 @@
+import Image from 'next/image'
 import { Typography } from ".";
 
 export default function Footer() {
   return (
     <footer className="app_footer app_landing_page__px">
-      hola !
+      <div className="app_footer__content">
+        <div className="app_footer__content__item">
+          <Image className="app__header__logo" src="/media/logos/h-logo-light.svg" width={147} height={35} alt="" priority />
+
+          <Typography variant="span">
+            Revolutionizing waste management and paving the way towards a more sustainable future
+          </Typography>
+
+          <Typography variant="span">
+            info@alterbin.com
+          </Typography>
+        </div>
+
+        <div className="app_footer__content__item">
+          <Typography fontWeight="bd" variant="h5">
+            Our Initiatives
+          </Typography>
+
+          <Typography variant="span">
+            Revolutionizing waste management and paving the way towards a more sustainable future
+          </Typography>
+        </div>
+      </div>
 
       <div className="app_footer__btm">
         <div className="app_footer__btm__socials">

@@ -86,9 +86,28 @@
   flex-direction: column;
   justify-content: space-between;
 
+  &__content {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 102px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: #FEFEFE;
+      font-size: 14px;
+
+      &:first-child {
+        max-width: 267px;
+      }
+    }
+  }
+
   &__btm {
     border-top: 0.5px solid #fff;
     color: #FEFEFE;
+    font-size: 14px;
     padding: 16px 10px;
     padding-bottom: 0;
     display: flex;
