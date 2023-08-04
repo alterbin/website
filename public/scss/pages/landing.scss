@@ -1,5 +1,5 @@
 .app_landing_page {
-  background-color: #F3F9F9;
+  background-color: #f3f9f9;
   min-height: 100%;
   // padding-top: 10px;
 
@@ -26,10 +26,10 @@
 }
 
 :root {
-  --main-color: #06382E;
-  --sec-color: #DD9940;
+  --main-color: #06382e;
+  --sec-color: #dd9940;
   --text-color: #333;
-  --sub-text-color: #8B8787;
+  --sub-text-color: #8b8787;
 }
 
 .app__header {
@@ -38,7 +38,7 @@
   align-items: center;
   padding-top: calc(20px + 10px); // 10px - app_landing_page padding
   padding-bottom: 20px;
-  background-color: #F3F9F9;
+  background-color: #f3f9f9;
 
   position: fixed;
   width: 100%;
@@ -90,23 +90,63 @@
     display: inline-flex;
     align-items: flex-start;
     gap: 102px;
+    justify-content: space-between;
 
     &__item {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      color: #FEFEFE;
+      color: #fefefe;
       font-size: 14px;
 
       &:first-child {
         max-width: 267px;
+      }
+
+      &:last-child {
+        max-width: 364px;
+      }
+
+      &__text p {
+        line-height: 200%;
+      }
+
+      &__subscribe {
+        border-radius: 45.595px;
+        border: 2px solid #f1f1f1;
+        background: #fff;
+        display: flex;
+        gap: 5px;
+        padding: 7px 18px;
+
+        &__input {
+          flex: 1;
+          color: #333;
+
+          &::placeholder {
+            color: #959595;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+
+        &__button {
+          all: unset;
+          cursor: pointer;
+          border-radius: 50px;
+          background: #06382e;
+          box-shadow: 0px 10px 50px 0px rgba(171, 171, 171, 0.19);
+          padding: 15px 30px;
+        }
       }
     }
   }
 
   &__btm {
     border-top: 0.5px solid #fff;
-    color: #FEFEFE;
+    color: #fefefe;
     font-size: 14px;
     padding: 16px 10px;
     padding-bottom: 0;
@@ -225,7 +265,8 @@
       width: calc(100% / 4);
       min-height: 225px;
       padding: 20px 34px;
-      border-image: linear-gradient(var(--sec-color), rgba(221, 153, 64, 0.18)) 20;
+      border-image: linear-gradient(var(--sec-color), rgba(221, 153, 64, 0.18))
+        20;
       border-width: 0;
       border-right-width: 1px;
       border-style: solid;
@@ -243,10 +284,12 @@
 
 .app_initiatives {
   min-height: 830px;
-  ;
-  background: linear-gradient(0deg, rgba(6, 56, 46, 0.88) 0%, rgba(6, 56, 46, 0.88) 100%),
-    url(/media/landing/glass-dirty.jpeg),
-    lightgray 50% / cover no-repeat;
+  background: linear-gradient(
+      0deg,
+      rgba(6, 56, 46, 0.88) 0%,
+      rgba(6, 56, 46, 0.88) 100%
+    ),
+    url(/media/landing/glass-dirty.jpeg), lightgray 50% / cover no-repeat;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -288,7 +331,7 @@
     align-items: center;
 
     &__p {
-      color: #FFF;
+      color: #fff;
       font-family: Trench Slab;
       font-size: 20px;
       font-style: normal;
@@ -299,8 +342,8 @@
 
   &__card {
     border-radius: 10px;
-    border: 1px solid #FFF;
-    background: #FFFDFD;
+    border: 1px solid #fff;
+    background: #fffdfd;
     backdrop-filter: blur(25px);
 
     &__img {
@@ -309,7 +352,7 @@
       object-fit: cover;
       margin-bottom: 10px;
       border-radius: 15px;
-      background: lightgray 50% / cover no-repeat, #FFF;
+      background: lightgray 50% / cover no-repeat, #fff;
     }
 
     &__h5 {
@@ -340,7 +383,7 @@
 
 .app_events {
   padding: 80px 0;
-  
+
   &__con {
     display: flex;
     flex-direction: column;
@@ -370,7 +413,7 @@
 
     &__evt_a {
       border-radius: 50px;
-      background: #FFF9F1;
+      background: #fff9f1;
       min-width: 168px;
       padding: 14px 27px;
       text-decoration: none;
@@ -383,10 +426,10 @@
       &--disabled {
         @extend .app_events__con__evt_a;
 
-        background: #F5F5F5;
+        background: #f5f5f5;
 
         span {
-          color: #C0C0C0 !important;
+          color: #c0c0c0 !important;
         }
       }
     }
@@ -400,7 +443,9 @@
         background-color: #fff;
         border: none;
         border-radius: 18.953px;
-        filter: drop-shadow(0px 18.952880859375px 47.382198333740234px rgba(119, 115, 170, 0.10));
+        filter: drop-shadow(
+          0px 18.952880859375px 47.382198333740234px rgba(119, 115, 170, 0.1)
+        );
         min-width: 383px;
         width: 383px;
       }
