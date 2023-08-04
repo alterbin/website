@@ -1,6 +1,7 @@
 'use client'
 
-import { Arrow, Footer, Typography } from '@/components'
+import { Footer, Typography } from '@/components'
+import { Arrow } from '@/components/svgs'
 import { Events, Initiatives, Mission } from '@/components/landing';
 import Image from 'next/image'
 

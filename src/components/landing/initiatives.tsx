@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { Arrow, Typography } from "../shared";
+import { Arrow } from "../svgs";
+import { Typography } from "../shared";
 
 const BASE_URL = '/media/landing/initiatives';
 

@@ -1,9 +1,32 @@
 import Image from "next/image";
 import { Typography } from ".";
+import { Call, Message } from "../svgs";
 
 export default function Footer() {
   return (
     <footer className="app_footer app_landing_page__px">
+      <div className="app_footer__contact_us app_landing_page__px">
+        <div className="app_footer__contact_us__con">
+          <Typography className="app_mission__top__h3" color="main-color" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
+            Supported by
+          </Typography>
+
+          <div className="app_footer__contact_us__con__info">
+            <div className="app_footer__contact_us__con__info__item">
+              <Message />
+
+              <Typography color="sub-text-color" variant="span">support@alterbin.com</Typography>
+            </div>
+
+            <div className="app_footer__contact_us__con__info__item">
+              <Call />
+
+              <Typography color="sub-text-color" variant="span">+234 903 988 7841</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="app_footer__content">
         <div className="app_footer__content__item">
           <Image
@@ -29,7 +52,7 @@ export default function Footer() {
           </Typography>
 
           <div className="app_footer__content__item__text">
-            <Typography variant="p">Recylcathon</Typography>
+            <Typography variant="p">Recycathon</Typography>
             <Typography variant="p">Philan Mobile App</Typography>
             <Typography variant="p">Marketplace</Typography>
           </div>
