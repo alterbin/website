@@ -433,7 +433,7 @@
     &__organizations {
       display: flex;
       justify-content: center;
-      overflow-x: auto;
+      min-width: 1140px;
     }
   }
 }

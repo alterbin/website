@@ -2,7 +2,6 @@
 
 import { Footer, Navbar } from '@/components'
 import { Events, Hero, Initiatives, Mission } from '@/components/landing';
-import WIP from '@/components/shared/wip';
 
 export default function Page() {
   return (
@@ -23,9 +22,7 @@ export default function Page() {
 
       <Events />
 
-      <WIP>
-        <Footer />
-      </WIP>
+      <Footer />
     </main>
   )
 }

@@ -66,6 +66,16 @@
     gap: 102px;
     justify-content: space-between;
 
+    @include screen('xl') {
+      gap: 82px;
+    }
+
+    @include screen('lg') {
+      flex-direction: column;
+      gap: 42px;
+      margin-bottom: 20px;
+    }
+
     &__item {
       display: flex;
       flex-direction: column;
@@ -130,6 +140,12 @@
     padding-bottom: 0;
     display: flex;
     justify-content: space-between;
+
+    @include screen('lg') {
+      flex-direction: column;
+      gap: 8px;
+      padding: 16px 0;
+    }
 
     &__socials {
       display: flex;

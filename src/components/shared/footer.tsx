@@ -10,9 +10,22 @@ function Union() {
   );
 }
 
+const footerBtm = (
+  <>
+    <div className="app_footer__btm__socials">
+      <FB />
+      <Twitter />
+      <Linkedin />
+      <IG />
+    </div>
+
+    <Typography variant="span">Copyright © 2023 Alterbin</Typography>
+  </>
+);
+
 function FooterC() {
   return (
-    <footer className="app_footer app_landing_page__px">
+    <footer className="app_footer">
       <div className="app_footer__contact_us app_landing_page__px">
         <div className="app_footer__contact_us__con">
           <Typography className="app_mission__top__h3" color="main-color" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
@@ -35,7 +48,7 @@ function FooterC() {
         </div>
       </div>
 
-      <div className="app_footer__content">
+      <div className="app_footer__content app_landing_page__px">
         <div className="app_footer__content__item">
           <Image
             className="app__header__logo"
@@ -110,15 +123,14 @@ function FooterC() {
         </div>
       </div>
 
-      <div className="app_footer__btm">
-        <div className="app_footer__btm__socials">
-          <FB />
-          <Twitter />
-          <Linkedin />
-          <IG />
+      <div className="app_landing_page__px d-none d-lg-block">
+        <div className="app_footer__btm">
+          {footerBtm}
         </div>
+      </div>
 
-        <Typography variant="span">Copyright © 2023 Alterbin</Typography>
+      <div className="app_footer__btm app_landing_page__px d-flex d-lg-none">
+        {footerBtm}
       </div>
     </footer>
   );
