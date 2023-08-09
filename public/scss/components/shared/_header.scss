@@ -1,0 +1,47 @@
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: calc(20px + 10px); // 10px - app_landing_page padding
+  padding-bottom: 20px;
+  background-color: #f3f9f9;
+
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  &__logo {
+    max-width: 147px;
+    height: auto;
+
+    @include screen('lg') {
+      max-width: 100px;
+    }
+  }
+
+  &__ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__li {
+      &__a {
+        color: var(--sub-text-color);
+        font-family: General Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+
+        &:hover {
+          color: var(--sub-text-color);
+        }
+      }
+    }
+  }
+}
