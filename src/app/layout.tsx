@@ -44,7 +44,7 @@ export default function RootLayout({
         <style>{generateColorsCss()}</style>
       </Metas>
 
-      <body className={inter.className}>{children}</body>
+      <body suppressHydrationWarning className={inter.className}>{children}</body>
     </html>
   )
 }
