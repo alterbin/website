@@ -10,7 +10,7 @@ function Union() {
   );
 }
 
-const footerBtm = (
+const FooterBtm = () => (
   <>
     <div className="app_footer__btm__socials">
       <FB />
@@ -125,12 +125,12 @@ function FooterC() {
 
       <div className="app_landing_page__px d-none d-lg-block">
         <div className="app_footer__btm">
-          {footerBtm}
+          <FooterBtm />
         </div>
       </div>
 
       <div className="app_footer__btm app_landing_page__px d-flex d-lg-none">
-        {footerBtm}
+        <FooterBtm />
       </div>
     </footer>
   );
