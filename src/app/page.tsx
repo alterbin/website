@@ -1,11 +1,11 @@
 'use client'
 
-import { Footer, Navbar, Typography } from '@/components'
+import { Footer, Navbar } from '@/components'
 import { Events, Hero, Initiatives, Mission } from '@/components/landing';
+import WIP from '@/components/shared/wip';
 
 export default function Page() {
   return (
-    <>
     <main className="app_landing_page">
       <Navbar />
 
@@ -23,14 +23,9 @@ export default function Page() {
 
       <Events />
 
-      <Footer />
+      <WIP>
+        <Footer />
+      </WIP>
     </main>
-
-    <main className="app_landing_page--mobile">
-      <Typography color="main-color" variant="h5">
-        Mobile view n/a
-      </Typography>
-    </main>
-    </>
   )
 }

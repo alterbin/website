@@ -2,13 +2,21 @@ import Image from "next/image";
 import { Typography } from ".";
 import { Call, Message } from "../svgs";
 
-export default function Footer() {
+function Union() {
+  return (
+    <svg className="app_footer__union" preserveAspectRatio="none" width="1440" height="189" viewBox="0 0 1440 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 16.971C155.341 -0.80553 279.709 134.835 724.993 12.5634C927.049 -42.9197 1348.63 108.452 1440 23.382V189H0L0 16.971Z" fill="#333333" />
+    </svg>
+  );
+}
+
+function FooterC() {
   return (
     <footer className="app_footer app_landing_page__px">
       <div className="app_footer__contact_us app_landing_page__px">
         <div className="app_footer__contact_us__con">
           <Typography className="app_mission__top__h3" color="main-color" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
-            Supported by
+            Contact Us
           </Typography>
 
           <div className="app_footer__contact_us__con__info">
@@ -113,6 +121,16 @@ export default function Footer() {
         <Typography variant="span">Copyright © 2023 Alterbin</Typography>
       </div>
     </footer>
+  );
+}
+
+export default function Footer() {
+  return (
+    <div className="position-relative">
+      <Union />
+
+      <FooterC />
+    </div>
   );
 }
 

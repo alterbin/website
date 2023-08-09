@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Typography } from "../shared";
+import WIP from '../shared/wip';
 
 const BASE_URL = '/media/landing/events';
 
@@ -74,14 +75,16 @@ export default function Events() {
           </Typography>
         </div>
 
-        <div className="app_events__con__organizations">
-          <Slack />
-          <Netflix />
-          <Fitbit />
-          <Google />
-          <Airbnb />
-          <Uber />
-        </div>
+        <WIP>
+          <div className="app_events__con__organizations">
+            <Slack />
+            <Netflix />
+            <Fitbit />
+            <Google />
+            <Airbnb />
+            <Uber />
+          </div>
+        </WIP>
       </div>
     </div>
   );
