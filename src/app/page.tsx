@@ -1,7 +1,7 @@
 'use client'
 
 import { Footer, Navbar } from '@/components'
-import { Events, Hero, Initiatives, Mission } from '@/components/landing';
+import { Events, Hero, Initiatives, Mission, Objectives } from '@/components/landing';
 
 export default function Page() {
   return (
@@ -12,11 +12,7 @@ export default function Page() {
 
       <Mission />
 
-      <div className="app_objectives">
-        <div className="app_landing_page__px">
-          {/* Objectives */}
-        </div>
-      </div>
+      <Objectives />
 
       <Initiatives />
 
