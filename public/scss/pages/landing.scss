@@ -28,6 +28,8 @@
 
 .app_hero_section {
   min-height: calc(100vh - 10px);
+  padding-top: calc(85px + 20px); // 85px - header height
+  padding-bottom: calc(85px + 20px); // 85px - header height
 
   display: flex;
   justify-content: space-between;
