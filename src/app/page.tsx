@@ -2,23 +2,26 @@
 
 import { Footer, Navbar } from '@/components'
 import { Events, Hero, Initiatives, Mission, Objectives } from '@/components/landing';
+import { Provider } from '@/contexts/global';
 
 export default function Page() {
   return (
-    <main className="app_landing_page">
-      <Navbar />
+    <Provider>
+      <main className="app_landing_page">
+        <Navbar />
 
-      <Hero />
+        <Hero />
 
-      <Mission />
+        <Mission />
 
-      <Objectives />
+        <Objectives />
 
-      <Initiatives />
+        <Initiatives />
 
-      <Events />
+        <Events />
 
-      <Footer />
-    </main>
+        <Footer />
+      </main>
+    </Provider>
   )
 }

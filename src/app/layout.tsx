@@ -7,7 +7,6 @@ import '../../public/scss/main.scss'
 import '../../public/scss/main.scss'
 
 import type { Metadata } from 'next'
-import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import generateColorsCss from '@/utils/colors'
 import { Metas } from '@/components/shared/metas'
