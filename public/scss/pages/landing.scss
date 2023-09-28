@@ -31,6 +31,11 @@
   padding-top: calc(85px + 20px); // 85px - header height
   padding-bottom: calc(85px + 20px); // 85px - header height
 
+  @include screen('lg') {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
