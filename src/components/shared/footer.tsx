@@ -3,6 +3,11 @@ import { Typography } from ".";
 import { Call, Message } from "../svgs";
 import { FB, Twitter, Linkedin, IG } from "./svgs";
 import routes from "@/utils/routes";
+import config from "@/utils/config";
+import { FormEvent, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+
+const WEB_APP_URL = config.services.google.sheets.WEB_APP_URL;
 
 export function Socials({ dark = false }) {
   const color = 'var(--main-color)';
@@ -36,6 +41,41 @@ const FooterBtm = () => (
 );
 
 function FooterC() {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const emailInput = document.querySelector('form input[name="Email"]') || {} as any;
+
+    const formData = new FormData();
+    formData.append('Email', emailInput.value);
+
+    try {
+      setLoading(true);
+
+      const response = await fetch(WEB_APP_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: formData,
+      });
+
+      if (typeof response === 'object') {
+        toast.success('Successful', { position: 'bottom-right' });
+        emailInput.value = '';
+      } else {
+        throw new Error('Failed')
+      }
+    } catch (error: any) {
+      toast.error('Failed', { position: 'bottom-right' });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <footer className="app_footer">
       <div className="app_footer__contact_us app_landing_page__px">
@@ -118,20 +158,22 @@ function FooterC() {
             </Typography>
           </div>
 
-          <div className="app_footer__content__item__subscribe">
+          <form onSubmit={handleSubmit} method="POST" action={WEB_APP_URL} className="app_footer__content__item__subscribe">
             <input
               type="text"
               className="app_footer__content__item__subscribe__input"
               placeholder="Enter your email address.."
+              name="Email"
+              required
             />
 
             <button
-              type="button"
+              type="submit"
               className="app_footer__content__item__subscribe__button"
             >
-              Subscribe
+              {loading ? 'Submitting...' : 'Subscribe'}
             </button>
-          </div>
+          </form>
         </div>
       </div>
 
@@ -154,6 +196,8 @@ export default function Footer() {
       <Union />
 
       <FooterC />
+
+      <Toaster />
     </div>
   );
 }
