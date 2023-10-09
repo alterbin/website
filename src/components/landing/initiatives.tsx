@@ -8,12 +8,12 @@ const BASE_URL = '/media/landing/initiatives';
 const initiatives = [
   { 
     title: 'Recycathon', subTitle: 'Competition', src: BASE_URL + '/recycathon.jpg',
-    description: "A competitive solution to waste management problem where participants showcase creativity in converting waste into valuebles",
+    description: "A competitive solution to waste management problem where participants showcase creativity in converting waste into valuables",
     linkText: "Learn more"
   },
   { 
     title: 'Philan', subTitle: 'Mobile Application', src: BASE_URL + '/philan.jpg',
-    description: "A digital spot where cheerful givers share things they no longer find useful with those who find value in them. This is supervised and controlled transfer of ownership of personal belongings, thus promote the welfare of others.",
+    description: "A digital spot where cheerful givers share things they no longer find useful with those who find value in them. This is supervised and controlled transfer of ownership of personal belongings.",
     linkText: "Learn more"
   },
   { 
