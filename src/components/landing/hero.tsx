@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Typography } from "../shared";
 import { Arrow } from "../svgs";
+import routes from '@/utils/routes';
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
           <a className="app_hero_section__content__txt__action" href="/">
             <Arrow />
 
-            <Typography variant="span">
+            <Typography variant="span" id={routes.home.hash.aboutUs}>
               Become a sponsor
             </Typography>
           </a>

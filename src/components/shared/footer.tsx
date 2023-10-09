@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Typography } from ".";
 import { Call, Message } from "../svgs";
 import { FB, Twitter, Linkedin, IG } from "./svgs";
+import routes from "@/utils/routes";
 
 export function Socials({ dark = false }) {
   const color = 'var(--main-color)';
@@ -38,7 +39,7 @@ function FooterC() {
   return (
     <footer className="app_footer">
       <div className="app_footer__contact_us app_landing_page__px">
-        <div className="app_footer__contact_us__con">
+        <div className="app_footer__contact_us__con" id={routes.home.hash.contactUs}>
           <Typography className="app_mission__top__h3" color="main-color" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
             Contact Us
           </Typography>

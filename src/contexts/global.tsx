@@ -1,9 +1,10 @@
+import { useHash } from '@/hooks';
+import { useSearchParams } from 'next/navigation';
 import React, {
   createContext,
   type ReactNode,
   useContext,
   useMemo,
-  useState,
   useEffect
 } from 'react';
 import { Updater, useImmer } from 'use-immer';
@@ -26,13 +27,15 @@ const Context = createContext<DefaultValues>({ state: initialState, setState: ()
 const Provider = (props: { children: ReactNode }) => {
   const { children } = props;
 
+  const hash = useHash();
+
   const [state, setState] = useImmer(initialState);
 
   const value = useMemo(() => ({ state, setState }), [state, setState]);
 
   useEffect(() => {
     setState(initialState);
-  }, [setState]);
+  }, [hash, setState]);
 
   return (
     <Context.Provider value={value}>

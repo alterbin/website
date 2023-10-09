@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Arrow } from "../svgs";
 import { Typography } from "../shared";
+import routes from '@/utils/routes';
 
 const BASE_URL = '/media/landing/initiatives';
 
@@ -12,7 +13,7 @@ const initiatives = [
 
 export default function Initiatives() {
   return (
-    <div className="app_initiatives">
+    <div className="app_initiatives" id={routes.home.hash.initiatives}>
       <div className="app_mission__top">
         <Typography className="app_mission__top__h2 mb-2" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
           Initiatives

@@ -3,12 +3,16 @@ import { Typography } from ".";
 import { Socials } from "./footer";
 import { Arrow } from "../svgs/arrows";
 import { useGlobalContext } from "@/contexts/global";
+import staticRoutes from "@/utils/routes";
+import Link from "next/link";
+
+const hash = staticRoutes.home.hash;
 
 const routes = [
-  { label: 'About Us', href: '' },
-  { label: 'Initiatives', href: '' },
-  { label: 'Events', href: '' },
-  { label: 'Contact', href: '' },
+  { label: 'About Us', href: `#${hash.aboutUs}` },
+  { label: 'Initiatives', href: `#${hash.initiatives}` },
+  { label: 'Events', href: `#${hash.events}` },
+  { label: 'Contact', href: `#${hash.contactUs}` },
 ];
 
 function Menu({ className = '' }) {
@@ -41,11 +45,11 @@ function Routes({ mobile = false }) {
     <ul className={`app__header__ul ${mobile ? '' : 'd-none d-lg-flex'}`}>
       {routes.map((item) => (
         <li className="app__header__ul__li" key={item.label}>
-          <a className="app__header__ul__li__a" href="http://">
+          <Link className="app__header__ul__li__a" href={item.href}>
             <Typography fontWeight="md">
               {item.label}
             </Typography>
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
@@ -55,7 +59,9 @@ function Routes({ mobile = false }) {
 function Main() {
   return (
     <div className="w-100 d-flex justify-content-between align-items-center">
-      <Image className="app__header__logo" src="/media/logos/h-logo2.svg" width={147} height={35} alt="" priority />
+      <Link href={staticRoutes.home.path}>
+        <Image className="app__header__logo" src="/media/logos/h-logo2.svg" width={147} height={35} alt="" priority />
+      </Link>
 
       <Routes />
 

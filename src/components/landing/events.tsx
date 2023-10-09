@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Typography } from "../shared";
+import routes from '@/utils/routes';
 
 const BASE_URL = '/media/landing/events';
 
@@ -24,7 +25,7 @@ function Organizations() {
 
 export default function Events() {
   return (
-    <div className="app_events">
+    <div className="app_events" id={routes.home.hash.events}>
       <div className="app_events__con app_landing_page__px">
         <div className="app_mission__top">
           <Typography className="app_mission__top__h2" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
