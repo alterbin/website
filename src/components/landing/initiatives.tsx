@@ -6,9 +6,21 @@ import routes from '@/utils/routes';
 const BASE_URL = '/media/landing/initiatives';
 
 const initiatives = [
-  { title: 'Recycathon', subTitle: 'Recycathon Competition', src: BASE_URL + '/recycathon.jpg' },
-  { title: 'Philan', subTitle: 'Philan Mobile Application', src: BASE_URL + '/philan.jpg' },
-  { title: 'Marketplace', subTitle: 'Recyclable Marketplace', src: BASE_URL + '/marketplace.jpg' },
+  { 
+    title: 'Recycathon', subTitle: 'Competition', src: BASE_URL + '/recycathon.jpg',
+    description: "A competitive solution to waste management problem where participants showcase creativity in converting waste into valuebles",
+    linkText: "Learn more"
+  },
+  { 
+    title: 'Philan', subTitle: 'Mobile Application', src: BASE_URL + '/philan.jpg',
+    description: "A digital spot where cheerful givers share things they no longer find useful with those who find value in them. This is supervised and controlled transfer of ownership of personal belongings, thus promote the welfare of others.",
+    linkText: "Learn more"
+  },
+  { 
+    title: 'Marketplace', subTitle: 'Marketplace', src: BASE_URL + '/marketplace.jpg',
+    description: "An ecommerce platform where users exchange collectible waste for money.",
+    linkText: "Coming soon"
+  },
 ];
 
 export default function Initiatives() {
@@ -43,13 +55,13 @@ export default function Initiatives() {
                 </Typography>
 
                 <Typography className="app_initiatives__card__p">
-                  Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                {item.description}
                 </Typography>
 
                 <div className="d-flex justify-content-end">
                   <a className="app_hero_section__content__txt__action" href="/">
                     <Typography variant="span">
-                      Learn more
+                      {item.linkText}
                     </Typography>
 
                     <Arrow />

@@ -14,14 +14,14 @@ export default function Hero() {
           </Typography>
 
           <Typography className="app_hero_section__content__txt__p">
-            Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.
+            Creating value for waste.
           </Typography>
 
           <a className="app_hero_section__content__txt__action" href="/">
             <Arrow />
 
             <Typography variant="span" id={routes.home.hash.aboutUs}>
-              Become a sponsor
+              Learn more
             </Typography>
           </a>
         </div>

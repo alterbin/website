@@ -88,7 +88,7 @@ function FooterC() {
             <div className="app_footer__contact_us__con__info__item">
               <Message />
 
-              <Typography color="sub-text-color" variant="span">support@alterbin.com</Typography>
+              <Typography color="sub-text-color" variant="span">hello@alterbin.com</Typography>
             </div>
 
             <div className="app_footer__contact_us__con__info__item">
@@ -112,11 +112,10 @@ function FooterC() {
           />
 
           <Typography variant="span">
-            Revolutionizing waste management and paving the way towards a more
-            sustainable future
+            Creating value for waste.
           </Typography>
 
-          <Typography variant="span">info@alterbin.com</Typography>
+          <Typography variant="span">waste@alterbin.com</Typography>
         </div>
 
         <div className="app_footer__content__item">
@@ -140,9 +139,6 @@ function FooterC() {
             <Typography variant="p"> About Us</Typography>
             <Typography variant="p">Press</Typography>
             <Typography variant="p">Contact Us</Typography>
-            <Typography variant="p">Help Center</Typography>
-            <Typography variant="p">Support</Typography>
-            <Typography variant="p">Join Our Community</Typography>
           </div>
         </div>
 

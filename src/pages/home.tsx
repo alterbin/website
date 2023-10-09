@@ -45,13 +45,13 @@ export default function Page() {
             </h1>
 
             <p className="app_hero_section__content__txt__p">
-              Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.
+            Creating value for waste.
             </p>
 
             <a className="app_hero_section__content__txt__action" href="/">
               <Arrow />
 
-              Become a sponsor
+              Learn more
             </a>
           </div>
 
