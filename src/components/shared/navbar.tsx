@@ -86,7 +86,7 @@ function MobileMenu() {
           <Arrow />
 
           <Typography variant="span">
-            Become a sponsor
+            Learn more
           </Typography>
         </a>
       </div>

@@ -20,13 +20,13 @@ export default function Objectives() {
             Objectives
           </Typography>
 
-          <a className="app_hero_section__content__txt__action" href="/">
+          {/* <a className="app_hero_section__content__txt__action" href="/">
             <Arrow />
 
             <Typography variant="span">
               Become a sponsor
             </Typography>
-          </a>
+          </a> */}
         </div>
 
         <div className="app_objectives__main">
