@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Typography } from "../shared";
 import { Arrow } from "../svgs";
 import routes from '@/utils/routes';
+import landing from '@/utils/assets/landing';
 
 export default function Hero() {
   return (
@@ -20,13 +21,13 @@ export default function Hero() {
           <a className="app_hero_section__content__txt__action" href="/">
             <Arrow />
 
-            <Typography variant="span" id={routes.home.hash.aboutUs}>
+            <Typography fontFamily="TrenchSlab" variant="span" id={routes.home.hash.aboutUs}>
               Learn more
             </Typography>
           </a>
         </div>
 
-        <Image className="app_hero_section__img_ct" src="/media/landing/trash.png" width={610} height={565} alt="" priority />
+        <Image className="app_hero_section__img_ct" src={landing.trash} alt="" priority />
       </div>
     </div>
   );
