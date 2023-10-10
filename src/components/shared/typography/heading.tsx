@@ -1,7 +1,7 @@
 import React from 'react';
 import { type Props } from './model';
 
-const Heading = (props: Props) => {
+function Heading(props: Props) {
   const {
     children, className, text, variant = 'h6', ...restProps
   } = props;
@@ -29,6 +29,6 @@ const Heading = (props: Props) => {
   }
 
   return <h6 {...restProps} className={className}>{content}</h6>;
-};
+}
 
 export default Heading;

@@ -1,7 +1,9 @@
-'use client'
+'use client';
 
-import { Footer, Navbar } from '@/components'
-import { Events, Hero, Initiatives, Mission, Objectives } from '@/components/landing';
+import { Footer, Navbar } from '@/components';
+import {
+  Events, Hero,
+} from '@/components/landing';
 import { Provider } from '@/contexts/global';
 
 export default function Page() {
@@ -17,5 +19,5 @@ export default function Page() {
         <Footer />
       </main>
     </Provider>
-  )
+  );
 }

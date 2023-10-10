@@ -7,7 +7,7 @@ export const rootColors = {
 
 export type Color = ReturnType<() => typeof rootColors>
 
-export default function generateColorsCss () {  
+export default function generateColorsCss() {
   let css = '';
   let rootVariables = '';
 
@@ -23,5 +23,5 @@ export default function generateColorsCss () {
     rootVariables += `--${key}: ${value};`;
   });
 
-  return css + ` :root { ${rootVariables} }`;
+  return `${css} :root { ${rootVariables} }`;
 }

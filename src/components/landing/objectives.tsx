@@ -1,8 +1,6 @@
-import Image from "next/image";
-import { Typography } from "../shared";
-import { Arrow } from "../svgs";
-
-import assets from "@/utils/assets";
+import Image from 'next/image';
+import assets from '@/utils/assets';
+import { Typography } from '../shared';
 
 const objs = [
   { label: 'To minimize waste generation' },
@@ -33,20 +31,20 @@ export default function Objectives() {
           <div className="app_objectives__main__stack">
             <div className="app_objectives__main__stack__lft">
               <Image
-                className={`app_objectives__main__stack__img app_objectives__main__stack__img--1`}
+                className="app_objectives__main__stack__img app_objectives__main__stack__img--1"
                 src={assets.objectives.obj1}
                 alt=""
               />
 
               <Image
-                className={`app_objectives__main__stack__img app_objectives__main__stack__img--2`}
+                className="app_objectives__main__stack__img app_objectives__main__stack__img--2"
                 src={assets.objectives.obj2}
                 alt=""
               />
             </div>
 
             <Image
-              className={`app_objectives__main__stack__img app_objectives__main__stack__img--3`}
+              className="app_objectives__main__stack__img app_objectives__main__stack__img--3"
               src={assets.objectives.obj3}
               alt=""
             />

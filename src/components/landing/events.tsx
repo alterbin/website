@@ -1,100 +1,14 @@
-import Image from 'next/image'
-import { Typography } from "../shared";
+import Image from 'next/image';
 import routes from '@/utils/routes';
+import { Typography } from '../shared';
 
 const BASE_URL = '/media/landing/events';
 
 const events = [
-  { title: 'Loyola College Recycathon First Edition 2023', desc: 'Recycathon Competition', src: BASE_URL + '/1.jpg' },
-  { title: 'Loyola College Recycathon Second Edition 2023', desc: 'Philan Mobile Application', src: BASE_URL + '/2.jpg' },
-  { title: 'Innovative Waste Management Seminar V1.0', desc: 'Recyclable Marketplace', src: BASE_URL + '/3.jpg' },
+  { title: 'Loyola College Recycathon First Edition 2023', desc: 'Recycathon Competition', src: `${BASE_URL}/1.jpg` },
+  { title: 'Loyola College Recycathon Second Edition 2023', desc: 'Philan Mobile Application', src: `${BASE_URL}/2.jpg` },
+  { title: 'Innovative Waste Management Seminar V1.0', desc: 'Recyclable Marketplace', src: `${BASE_URL}/3.jpg` },
 ];
-
-function Organizations() {
-  return (
-    <div className="app_events__con__organizations">
-      <Slack />
-      <Netflix />
-      <Fitbit />
-      <Google />
-      <Airbnb />
-      <Uber />
-    </div>
-  );
-}
-
-export default function Events() {
-  return (
-    <div className="app_events" id={routes.home.hash.events}>
-      <div className="app_events__con app_landing_page__px">
-        <div className="app_mission__top">
-          <Typography className="app_mission__top__h2" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
-            Events
-          </Typography>
-
-          <Typography className="app_mission__top__p" color="sub-text-color">
-            Making a difference everyday!
-            <Blob />
-          </Typography>
-
-          <div className="app_events__con__evt d-flex justify-content-center">
-            <a className="app_events__con__evt_a" href="http://">
-              <Typography color="sec-color" variant="span">Upcoming Events</Typography>
-            </a>
-
-            <a className="app_events__con__evt_a--disabled" href="http://">
-              <Typography color="sec-color" variant="span">Past Events</Typography>
-            </a>
-          </div>
-        </div>
-
-        <div className="app_events__con__gallery">
-          {events.map((item) => (
-            <div className="card" key={item.title}>
-              <Image className="app_events__con__gallery__img" src={item.src} width={147} height={35} alt="" priority />
-
-              <div className="card-body">
-                <div className="app_events__con__gallery__date">
-                  <Typography className="app_events__con__gallery__month" color="sec-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
-                    Apr
-                  </Typography>
-
-                  <Typography className="app_events__con__gallery__h3" color="text-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
-                    14
-                  </Typography>
-                </div>
-
-                <div>
-                  <Typography className="app_events__con__gallery__h5" color="text-color" fontFamily="TrenchSlab" fontWeight="md" variant="h5">
-                    Loyola College Recycathon First Edition 2023
-                  </Typography>
-
-                  <Typography className="app_events__con__gallery__span" color="sub-text-color" variant="span">
-                    Jorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </Typography>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="app_mission__top">
-          <Typography className="app_mission__top__h3" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
-            Supported by
-          </Typography>
-
-          <Typography className="app_mission__top__p" color="sub-text-color">
-            Organizations that strongly believe in our mission
-          </Typography>
-        </div>
-      </div>
-
-      <div className="overflow-auto">
-        <Organizations />
-      </div>
-    </div>
-  );
-}
 
 function Blob() {
   return (
@@ -187,5 +101,91 @@ function Uber() {
       <path fillRule="evenodd" clipRule="evenodd" d="M91.6089 11.3974C91.6089 13.3021 90.9403 14.9137 89.3164 15.7928C91.5134 16.4277 92.5164 18.43 92.4686 20.823C92.4686 24.8277 89.6985 26.3905 85.8298 26.3905H75.5612C74.4627 26.3905 74.0806 26.0486 74.0806 25.2184V7.73464C74.0806 6.75789 74.6059 6.31836 75.991 6.31836H84.397C88.0746 6.31836 91.6089 6.95324 91.6089 11.3974ZM78.188 9.54162H84.6836C86.8328 9.54162 87.4537 10.3718 87.4537 12.13C87.4537 13.8393 86.8328 14.7184 84.6836 14.7184H78.188V9.54162ZM85.4477 23.1672H78.188V19.5044C78.188 18.2835 78.8567 17.6974 80.6238 17.6974H85.4477C87.7403 17.6974 88.4089 18.6253 88.4089 20.4323C88.4089 22.2881 87.7403 23.1672 85.4477 23.1672Z" fill="#8C98A4" />
       <path fillRule="evenodd" clipRule="evenodd" d="M138.272 18.3323L142.666 26.0486C142.761 26.1463 142.761 26.3905 142.427 26.3905H138.702C138.426 26.3905 138.327 26.2551 138.193 26.0711C138.187 26.0637 138.182 26.0562 138.176 26.0486L134.212 18.723H130.582C128.815 18.723 128.146 19.3091 128.146 20.53V26.3905H124.564C124.23 26.3905 124.087 26.2439 124.087 25.9021V7.73464C124.087 6.75789 124.612 6.31836 125.997 6.31836H134.403C139.275 6.31836 142.236 7.63696 142.236 12.5207C142.236 16.2811 140.469 17.7463 138.272 18.3323ZM128.146 15.6463H134.976C137.555 15.6463 138.081 14.6207 138.081 12.5695C138.081 10.5672 137.508 9.54162 134.976 9.54162H128.146V15.6463Z" fill="#8C98A4" />
     </svg>
+  );
+}
+
+function Organizations() {
+  return (
+    <div className="app_events__con__organizations">
+      <Slack />
+      <Netflix />
+      <Fitbit />
+      <Google />
+      <Airbnb />
+      <Uber />
+    </div>
+  );
+}
+
+export default function Events() {
+  return (
+    <div className="app_events" id={routes.home.hash.events}>
+      <div className="app_events__con app_landing_page__px">
+        <div className="app_mission__top">
+          <Typography className="app_mission__top__h2" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
+            Events
+          </Typography>
+
+          <Typography className="app_mission__top__p" color="sub-text-color">
+            Making a difference everyday!
+            <Blob />
+          </Typography>
+
+          <div className="app_events__con__evt d-flex justify-content-center">
+            <a className="app_events__con__evt_a" href="http://">
+              <Typography color="sec-color" variant="span">Upcoming Events</Typography>
+            </a>
+
+            <a className="app_events__con__evt_a--disabled" href="http://">
+              <Typography color="sec-color" variant="span">Past Events</Typography>
+            </a>
+          </div>
+        </div>
+
+        <div className="app_events__con__gallery">
+          {events.map((item) => (
+            <div className="card" key={item.title}>
+              <Image className="app_events__con__gallery__img" src={item.src} width={147} height={35} alt="" priority />
+
+              <div className="card-body">
+                <div className="app_events__con__gallery__date">
+                  <Typography className="app_events__con__gallery__month" color="sec-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
+                    Apr
+                  </Typography>
+
+                  <Typography className="app_events__con__gallery__h3" color="text-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
+                    14
+                  </Typography>
+                </div>
+
+                <div>
+                  <Typography className="app_events__con__gallery__h5" color="text-color" fontFamily="TrenchSlab" fontWeight="md" variant="h5">
+                    Loyola College Recycathon First Edition 2023
+                  </Typography>
+
+                  <Typography className="app_events__con__gallery__span" color="sub-text-color" variant="span">
+                    Jorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </Typography>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="app_mission__top">
+          <Typography className="app_mission__top__h3" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
+            Supported by
+          </Typography>
+
+          <Typography className="app_mission__top__p" color="sub-text-color">
+            Organizations that strongly believe in our mission
+          </Typography>
+        </div>
+      </div>
+
+      <div className="overflow-auto">
+        <Organizations />
+      </div>
+    </div>
   );
 }

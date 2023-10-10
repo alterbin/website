@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import { Typography } from "../shared";
-import { Arrow } from "../svgs";
+import Image from 'next/image';
 import routes from '@/utils/routes';
 import landing from '@/utils/assets/landing';
+import { Typography } from '../shared';
+import { Arrow } from '../svgs';
 
 export default function Hero() {
   return (
@@ -10,8 +10,12 @@ export default function Hero() {
       <div className="app_hero_section__content app_landing_page__px">
         <div className="app_hero_section__content__txt">
           <Typography className="app_hero_section__content__txt__h1" fontFamily="TrenchSlab" fontWeight="md" variant="h1">
-            Waste is not just a problem—it&lsquo;s an <br className="d-none d-lg-flex" />
-            <span>opportunity</span> for change
+            Waste is not just a problem—it&lsquo;s an
+            {' '}
+            <br className="d-none d-lg-flex" />
+            <span>opportunity</span>
+            {' '}
+            for change
           </Typography>
 
           <Typography className="app_hero_section__content__txt__p">
