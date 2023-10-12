@@ -5,8 +5,8 @@ const config = {
     google: {
       sheets: {
         WEB_APP_URL: 'https://script.google.com/macros/s/AKfycbwfal8tVMs335cJfR3bSwvkAGaUl8U1Atb2KNFpLyxstdpFmGkshYNYIPpi5IeiGaDbKw/exec',
-      }
-    }
+      },
+    },
   },
 };
 

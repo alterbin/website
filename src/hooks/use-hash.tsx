@@ -1,12 +1,11 @@
-"use client";
+'use client';
 
-import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
-const getHash = () =>
-  typeof window !== "undefined"
-    ? decodeURIComponent(window.location.hash.replace("#", ""))
-    : undefined;
+const getHash = () => (typeof window !== 'undefined'
+  ? decodeURIComponent(window.location.hash.replace('#', ''))
+  : undefined);
 
 const useHash = () => {
   const [hash, setHash] = useState(getHash());

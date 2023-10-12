@@ -1,28 +1,13 @@
-import Image from "next/image";
-import { Typography } from ".";
-import { Call, Message } from "../svgs";
-import { FB, Twitter, Linkedin, IG } from "./svgs";
-import routes from "@/utils/routes";
-import config from "@/utils/config";
-import { FormEvent, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import Image from 'next/image';
+import routes from '@/utils/routes';
+import config from '@/utils/config';
+import { FormEvent, useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+import { Call, Message } from '../svgs';
+import Typography from './typography';
+import Socials from './socials';
 
-const WEB_APP_URL = config.services.google.sheets.WEB_APP_URL;
-
-export function Socials({ dark = false }) {
-  const color = 'var(--main-color)';
-
-  const props = dark ? { fill: color, stroke: color } : {};
-
-  return (
-    <div className="app_footer__btm__socials">
-      <FB {...props} />
-      <Twitter {...props} />
-      <Linkedin {...props} />
-      <IG {...props} />
-    </div>
-  );
-}
+const { WEB_APP_URL } = config.services.google.sheets;
 
 function Union() {
   return (
@@ -32,13 +17,15 @@ function Union() {
   );
 }
 
-const FooterBtm = () => (
-  <>
-    <Socials />
+function FooterBtm() {
+  return (
+    <>
+      <Socials />
 
-    <Typography variant="span">Copyright © 2023 Alterbin</Typography>
-  </>
-);
+      <Typography variant="span">Copyright © 2023 Alterbin Tech</Typography>
+    </>
+  );
+}
 
 function FooterC() {
   const [loading, setLoading] = useState(false);
@@ -55,10 +42,10 @@ function FooterC() {
       setLoading(true);
 
       const response = await fetch(WEB_APP_URL, {
-        method: "POST",
-        mode: "no-cors",
+        method: 'POST',
+        mode: 'no-cors',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: formData,
       });
@@ -67,7 +54,7 @@ function FooterC() {
         toast.success('Successful', { position: 'bottom-right' });
         emailInput.value = '';
       } else {
-        throw new Error('Failed')
+        throw new Error('Failed');
       }
     } catch (error: any) {
       toast.error('Failed', { position: 'bottom-right' });

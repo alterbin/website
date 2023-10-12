@@ -1,41 +1,41 @@
-import '../../public/fonts/GeneralSans_Complete/Fonts/WEB/css/general-sans.css'
-import '../../public/fonts/TrenchSlab_Complete/Fonts/WEB/css/trench-slab.css'
+import '../../public/fonts/GeneralSans_Complete/Fonts/WEB/css/general-sans.css';
+import '../../public/fonts/TrenchSlab_Complete/Fonts/WEB/css/trench-slab.css';
 
-import '../../public/css/bootstrap.min.css'
-import '../../public/css/colors.css'
-import '../../public/scss/main.scss'
-import '../../public/scss/main.scss'
+import '../../public/css/bootstrap.min.css';
+import '../../public/css/colors.css';
+import '../../public/scss/main.scss';
 
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import generateColorsCss from '@/utils/colors'
-import { Metas } from '@/components/shared/metas'
-import { metaData } from '@/utils/static'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import generateColorsCss from '@/utils/colors';
+import { Metas } from '@/components/shared/metas';
+import { metaData } from '@/utils/static';
+import { ReactNode } from 'react';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: metaData.siteName,
   description: metaData.description,
   openGraph: {
     ...metaData,
-    type: "website",
+    type: 'website',
     images: [{
       url: metaData.image,
     }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     site: `@${metaData.url}`,
     creator: `@${metaData.siteName}`,
-    images: metaData.image
-  }
-}
+    images: metaData.image,
+  },
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="en">
@@ -45,5 +45,5 @@ export default function RootLayout({
 
       <body suppressHydrationWarning className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }

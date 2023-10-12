@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import { SVGProps } from 'react';
 
 export function FB({ fill = 'white', stroke = 'white', ...props }: SVGProps<SVGSVGElement>) {
   return (
@@ -105,6 +105,7 @@ export function IG({ fill = 'white', stroke = 'white', ...props }: SVGProps<SVGS
       viewBox="0 0 30 29"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M28.6714 14.2709C28.6714 21.8767 22.5057 28.0424 14.9 28.0424C7.29422 28.0424 1.12854 21.8767 1.12854 14.2709C1.12854 6.66519 7.29422 0.499512 14.9 0.499512C22.5057 0.499512 28.6714 6.66519 28.6714 14.2709Z"

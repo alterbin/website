@@ -1,6 +1,6 @@
 import { type IProps } from './model';
 
-export default function useClassName (props: IProps) {
+export default function useClassName(props: IProps) {
   let className = 'typography mb-0 ';
 
   if (props.align) className += ` text-${props.align} `;

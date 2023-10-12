@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import Typography from "./typography";
+import { ReactNode } from 'react';
+import Typography from './typography';
 
 export default function WIP({ children }: { children: ReactNode }) {
   return (

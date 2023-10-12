@@ -1,16 +1,15 @@
 import { useHash } from '@/hooks';
-import { useSearchParams } from 'next/navigation';
 import React, {
   createContext,
   type ReactNode,
   useContext,
   useMemo,
-  useEffect
+  useEffect,
 } from 'react';
 import { Updater, useImmer } from 'use-immer';
 
 const initialState = {
-  showMobileMenu: false
+  showMobileMenu: false,
 };
 
 type State = ReturnType<() => typeof initialState>;
@@ -24,7 +23,7 @@ interface DefaultValues {
 
 const Context = createContext<DefaultValues>({ state: initialState, setState: () => null });
 
-const Provider = (props: { children: ReactNode }) => {
+function Provider(props: { children: ReactNode }) {
   const { children } = props;
 
   const hash = useHash();
@@ -42,7 +41,7 @@ const Provider = (props: { children: ReactNode }) => {
       {children}
     </Context.Provider>
   );
-};
+}
 
 const useGlobalContext = () => useContext(Context);
 

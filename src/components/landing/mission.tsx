@@ -1,44 +1,4 @@
-import { Typography } from "../shared";
-
-const missions = [
-  { text: 'Reducing/minimizing <br /> food wastage ', icon: <Food /> },
-  { text: 'Promoting creative <br /> recycling', icon: <EcologyRecycle /> },
-  { text: 'Reducing pollution <br /> (land, water, and air)', icon: <PlasticPollution /> },
-  { text: 'Encouraging responsible <br /> consumption and <br /> production', icon: <Healthy /> },
-];
-
-export default function Mission() {
-  return (
-    <div className="app_mission">
-      <div className="app_mission__top">
-        <Typography className="app_mission__top__h2" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
-          Mission
-        </Typography>
-
-        <Typography className="app_mission__top__p">
-          Our mission at Alterbin is to revolutionize waste management and pave the way towards <br />
-          <span>
-            more sustainable future by:
-            <Blob />
-          </span>
-        </Typography>
-      </div>
-
-      <br />
-      <br />
-
-      <div className="app_mission__mlist app_landing_page__px">
-        {missions.map((item) => (
-          <div className="app_mission__mlist__item" key={item.text}>
-            <Typography dangerouslySetInnerHTML={{ __html: item.text }} fontWeight="md" />
-
-            {item.icon}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+import { Typography } from '../shared';
 
 function Blob() {
   return (
@@ -106,5 +66,47 @@ function Healthy() {
       <path d="M23.75 30.5V48H30V65.5H50V48H56.25V30.5H51.25V43H28.75V30.5H23.75Z" fill="#DD9940" />
       <path d="M40 41.75C42.7614 41.75 45 39.5114 45 36.75C45 33.9886 42.7614 31.75 40 31.75C37.2386 31.75 35 33.9886 35 36.75C35 39.5114 37.2386 41.75 40 41.75Z" fill="#DD9940" />
     </svg>
+  );
+}
+
+const missions = [
+  { text: 'Reducing/minimizing <br /> food wastage ', icon: <Food /> },
+  { text: 'Promoting creative <br /> recycling', icon: <EcologyRecycle /> },
+  { text: 'Reducing pollution <br /> (land, water, and air)', icon: <PlasticPollution /> },
+  { text: 'Encouraging responsible <br /> consumption and <br /> production', icon: <Healthy /> },
+];
+
+export default function Mission() {
+  return (
+    <div className="app_mission">
+      <div className="app_mission__top">
+        <Typography className="app_mission__top__h2" fontFamily="TrenchSlab" fontWeight="md" variant="h2">
+          Mission
+        </Typography>
+
+        <Typography className="app_mission__top__p">
+          Our mission at Alterbin is to revolutionize waste management and pave the way towards
+          {' '}
+          <br />
+          <span>
+            more sustainable future by:
+            <Blob />
+          </span>
+        </Typography>
+      </div>
+
+      <br />
+      <br />
+
+      <div className="app_mission__mlist app_landing_page__px">
+        {missions.map((item) => (
+          <div className="app_mission__mlist__item" key={item.text}>
+            <Typography dangerouslySetInnerHTML={{ __html: item.text }} fontWeight="md" />
+
+            {item.icon}
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
