@@ -22,7 +22,7 @@ function FooterBtm() {
     <>
       <Socials />
 
-      <Typography variant="span">Copyright © 2023 Alterbin</Typography>
+      <Typography variant="span">Copyright © 2023 Alterbin Tech</Typography>
     </>
   );
 }

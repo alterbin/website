@@ -355,6 +355,7 @@
 
     .card {
       width: 390px;
+      height: calc(100% - 42.5px); // 42.5px - item_title height
 
       @include screen('sm') {
         width: 100%;
