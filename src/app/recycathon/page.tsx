@@ -1,6 +1,7 @@
 'use client';
 
-import { Footer, Navbar } from '@/components';
+import { Footer } from '@/components';
+import {  RecycathonNavbar, AboutEvent } from '@/components/recycathon';
 import {
   Events, Hero,
 } from '@/components/landing';
@@ -10,11 +11,11 @@ export default function Page() {
   return (
     <Provider>
       <main className="app_landing_page">
-        <Navbar />
+        <RecycathonNavbar />
 
         <Hero />
 
-        <Events />
+        <AboutEvent />
 
         <Footer />
       </main>

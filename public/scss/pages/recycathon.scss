@@ -1,0 +1,143 @@
+.app_recycathon_page {
+  background-color: #f3f9f9;
+  min-height: 100%;
+  // padding-top: 10px;
+
+  &__px {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @include screen('md') {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @include screen('sm') {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+:root {
+  --main-color: #06382e;
+  --sec-color: #dd9940;
+  --text-color: #333;
+  --sub-text-color: #8b8787;
+  --button-text-color: #ffffff;
+}
+
+.app_aboutevent_section {
+  min-height: calc(100vh - 10px);
+  padding-top: calc(85px + 20px); // 85px - header height
+  padding-bottom: calc(85px + 20px); // 85px - header height
+  background-color: #fff;
+
+  @include screen('lg') {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screen('lg') {
+      flex-direction: column;
+      margin-top: calc(74px + 42px); // 74px - header height
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__txt {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include screen('lg') {
+        gap: 20px;
+      }
+      &__title{
+        font-size: 48px;
+      }
+
+      &__h1 {
+        color: var(--main-color);
+        font-family: Trench Slab;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @include screen('lg') {
+          font-size: 35px;
+        }
+
+        span {
+          color: var(--sec-color);
+        }
+      }
+    
+
+      &__p {
+        color: var(--sub-text-color);
+        font-family: General Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+
+        &__about{
+            color: var(--sub-text-color);
+        font-family: General Sans;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 4px;
+        }
+        &__line {
+          display: inline-block;
+          width: 20px;
+          border-top: 2px solid var(--sub-text-color); 
+          margin-right: 2px; 
+          margin-bottom: 5px;
+        }
+      }
+
+      &__action {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--sec-color);
+
+        &:hover {
+          color: var(--sec-color);
+        }
+      }
+      &__button {
+        border-radius: 5rem;
+        border: none;
+        padding: 13px 10px;
+        background-color: var(--sec-color);
+        color: var(--button-text-color);
+        max-width: 200px;
+      }
+    }
+  }
+
+  &__img_ct {
+    max-width: 610px;
+    border-radius: 2rem;
+  }
+}
