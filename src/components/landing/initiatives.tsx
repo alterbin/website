@@ -6,25 +6,33 @@ import { Typography } from '../shared';
 const BASE_URL = '/media/landing/initiatives';
 
 const initiatives = [
-  { 
-    title: 'Recycathon', subTitle: 'Competition', src: BASE_URL + '/recycathon.jpg',
-    description: "A competitive solution to waste management problem where participants showcase creativity in converting waste into valuables.",
-    linkText: "Learn more"
+  {
+    title: 'Recycathon',
+    subTitle: 'Competition',
+    src: `${BASE_URL}/recycathon.jpg`,
+    description: 'A competitive solution to waste management problem where participants showcase creativity in converting waste into valuables.',
+    linkText: 'Learn more',
   },
-  { 
-    title: 'Philan', subTitle: 'Mobile Application', src: BASE_URL + '/philan.jpg',
-    description: "A digital platform that promotes supervised and controlled transfer of ownership of personal belongings deemed as waste by giver but valuable by receiver.",
-    linkText: "Learn more"
+  {
+    title: 'Philan',
+    subTitle: 'Mobile Application',
+    src: `${BASE_URL}/philan.jpg`,
+    description: 'A digital platform that promotes supervised and controlled transfer of ownership of personal belongings deemed as waste by giver but valuable by receiver.',
+    linkText: 'Learn more',
   },
-  { 
-    title: 'Marketplace', subTitle: 'Marketplace', src: BASE_URL + '/marketplace.jpg',
-    description: "An ecommerce platform where users exchange collectible waste for money.",
-    linkText: "Coming soon"
+  {
+    title: 'Marketplace',
+    subTitle: 'Marketplace',
+    src: `${BASE_URL}/marketplace.jpg`,
+    description: 'An ecommerce platform where users exchange collectible waste for money.',
+    linkText: 'Coming soon',
   },
-  { 
-    title: 'Recyschool', subTitle: 'Education', src: BASE_URL + '/recycathon.jpg',
-    description: "Providing education in waste affected rural areas where students pay fee using waste collected from their immediate environment.",
-    linkText: "Coming soon"
+  {
+    title: 'Recyschool',
+    subTitle: 'Education',
+    src: `${BASE_URL}/recycathon.jpg`,
+    description: 'Providing education in waste affected rural areas where students pay fee using waste collected from their immediate environment.',
+    linkText: 'Coming soon',
   },
 ];
 
