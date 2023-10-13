@@ -135,7 +135,7 @@
   min-height: calc(100vh - 10px);
   padding-top: calc(5px + 20px); // 5px - header height
   padding-bottom: calc(5px + 20px); // 85px - header height
-  background-color: #ebedee;
+  background-color: #F6F8FA;
 
   @include screen('lg') {
     padding-top: 0;
@@ -230,5 +230,80 @@
     max-width: 610px;
     border-radius: 2rem;
     margin-right: 20px;
+  }
+}
+
+.app_award_section {
+  min-height: calc(100vh - 10px);
+  padding-top: calc(5px + 20px); // 5px - header height
+  padding-bottom: calc(5px + 20px); // 85px - header height
+  background-color: #ffffff;
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #333333;
+    &__text{
+      display: flex;
+      flex-direction: column;
+      // gap: 20px;
+      padding: 10px 50px;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      line-height: 60px;
+    }
+    &__performance{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      &__txt{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+
+      &__second{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        min-width: 500px;
+        align-items: center;
+          border-right: 2px solid #DDDDDD;
+      }
+      &__winner{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        min-width: 300px;
+        align-items: center;
+      }
+      &__third{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        min-width: 450px;
+        align-items: center;
+        border-left: 2px solid #DDDDDD;
+        padding: 20px 0;
+      }
+      &__reward{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__text{
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+        }
+      }
+      &__img{
+        max-width: 150px;
+    // border-radius: 2rem;
+    &_winner{
+      max-width: 80px;
+    }
+      }
+    }
   }
 }

@@ -1,7 +1,7 @@
 'use client';
 
 import { Footer } from '@/components';
-import {  RecycathonNavbar, AboutEvent, EventAgenda } from '@/components/recycathon';
+import {  RecycathonNavbar, AboutEvent, EventAgenda, Competition } from '@/components/recycathon';
 import {
   Events, Hero,
 } from '@/components/landing';
@@ -18,6 +18,8 @@ export default function Page() {
         <AboutEvent />
         
         <EventAgenda />
+        
+        <Competition />
 
         <Footer />
       </main>
