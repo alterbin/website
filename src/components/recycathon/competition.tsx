@@ -2,7 +2,6 @@ import React from 'react';
 import Line from './line';
 import { Typography } from '../shared';
 import { Bullet } from '../svgs/bullet';
-import recycathon from '@/utils/assets/recycathon';
 import Image from 'next/image';
 import assets from '@/utils/assets';
 
@@ -119,10 +118,87 @@ function Award() {
   );
 }
 
+function Judges() {
+  return (
+    <div className="app_judges_section">
+      <div className="app_judges_section__content app_recycathon_page__px">
+        <div className="app_judges_section__content__text">
+          <Typography
+            variant="P-XXS"
+            fontWeight="md"
+            color="sub-text-color"
+            className=""
+          >
+            <Line />
+            JUDGES
+          </Typography>
+          <Typography
+            fontFamily="TrenchSlab"
+            variant="h1"
+            className="app_judges_section__content__text__h1"
+          >
+            <span className="d-flex justify-content-center">
+              Judges With Expert Knowledge In
+            </span>
+            Sustainable Development And Innovations
+          </Typography>
+        </div>
+
+        <div className="app_judges_section__content__container">
+          <div className="app_judges_section__content__img">
+            <Image
+              src={assets.recycathon.tony}
+              alt=""
+              priority
+              className="app_judges_section__content__img_ct"
+            />
+            <div className="app_judges_section__content__img_txt">
+              <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
+                Tony Danza
+              </Typography>
+              <Typography>Role</Typography>
+            </div>
+          </div>
+          <div className="app_judges_section__content__img">
+            <Image
+              src={assets.recycathon.peter}
+              alt=""
+              priority
+              className="app_judges_section__content__img_ct"
+            />
+            <div className="app_judges_section__content__img_txt">
+              <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
+                Peter Thornton
+              </Typography>
+              <Typography>Role</Typography>
+            </div>
+          </div>
+          <div className="app_judges_section__content__img">
+            <Image
+              src={assets.recycathon.willie}
+              alt=""
+              priority
+              className="app_judges_section__content__img_ct"
+            />
+            <div className="app_judges_section__content__img_txt">
+              <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
+                Willie Tanner
+              </Typography>
+              <Typography variant="P-XXS">Role</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const Competition = () => {
   return (
     <>
       <Award />
+
+      <Judges />
     </>
   );
 };

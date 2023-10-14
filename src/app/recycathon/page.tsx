@@ -1,10 +1,14 @@
 'use client';
 
 import { Footer } from '@/components';
-import {  RecycathonNavbar, AboutEvent, EventAgenda, Competition } from '@/components/recycathon';
 import {
-  Events, Hero,
-} from '@/components/landing';
+  RecycathonNavbar,
+  AboutEvent,
+  EventAgenda,
+  Competition,
+  Showcase,
+} from '@/components/recycathon';
+import { Events, Hero } from '@/components/landing';
 import { Provider } from '@/contexts/global';
 
 export default function Page() {
@@ -16,10 +20,12 @@ export default function Page() {
         <Hero />
 
         <AboutEvent />
-        
+
         <EventAgenda />
-        
+
         <Competition />
+
+        <Showcase />
 
         <Footer />
       </main>

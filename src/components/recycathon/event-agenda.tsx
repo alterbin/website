@@ -38,20 +38,28 @@ const EventAgenda = () => {
             value for waste. This event entails:
                   </Typography>
                   <div className='app_eventagenda_section__content__txt__list_container'>
-          <div className='app_eventagenda_section__content__txt__list_container__list'>
+            <div className='app_eventagenda_section__content__txt__list_container__list'>
+              <div className='app_eventagenda_section__content__txt__list_container__list__bullet'>
             <Bullet />
+              </div>
             <Typography variant='P-LG'>Online registration of participants for the competition</Typography>
           </div>
           <div className='app_eventagenda_section__content__txt__list_container__list'>
+          <div className='app_eventagenda_section__content__txt__list_container__list__bullet'>
             <Bullet />
+              </div>
             <Typography variant='P-LG'>On the D-day, participants showcase/present their innovations</Typography>
           </div>
           <div className='app_eventagenda_section__content__txt__list_container__list'>
+          <div className='app_eventagenda_section__content__txt__list_container__list__bullet'>
             <Bullet />
+              </div>
             <Typography variant='P-LG'>Judges how are experts in the field analyze each of the innovations presented</Typography>
           </div>
           <div className='app_eventagenda_section__content__txt__list_container__list'>
+          <div className='app_eventagenda_section__content__txt__list_container__list__bullet'>
             <Bullet />
+              </div>
             <Typography  variant='P-LG'>Award presentation to the winners</Typography>
                   </div>
                   </div>
