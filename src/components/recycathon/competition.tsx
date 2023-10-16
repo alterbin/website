@@ -1,9 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
+import assets from '@/utils/assets';
 import Line from './line';
 import { Typography } from '../shared';
 import { Bullet } from '../svgs/bullet';
-import Image from 'next/image';
-import assets from '@/utils/assets';
 
 function Award() {
   return (
@@ -21,10 +21,13 @@ function Award() {
           </Typography>
           <Typography fontFamily="TrenchSlab" variant="h1">
             {' '}
-            Recycathon Champions Get Rewarded For <br />
+            Recycathon Champions Get Rewarded For
+            {' '}
+            <br />
             <span className="d-flex justify-content-center">
               Outstanding Innovations
-            </span>{' '}
+            </span>
+            {' '}
           </Typography>
         </div>
         <div className="app_award_section__content__performance">
@@ -193,7 +196,7 @@ function Judges() {
   );
 }
 
-const Competition = () => {
+function Competition() {
   return (
     <>
       <Award />
@@ -201,6 +204,6 @@ const Competition = () => {
       <Judges />
     </>
   );
-};
+}
 
 export default Competition;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RightSkew = () => {
+function RightSkew() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,6 +16,6 @@ const RightSkew = () => {
       />
     </svg>
   );
-};
+}
 
 export default RightSkew;

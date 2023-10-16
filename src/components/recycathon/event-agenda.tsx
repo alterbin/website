@@ -4,7 +4,7 @@ import recycathon from '@/utils/assets/recycathon';
 import { Typography } from '../shared';
 import { Bullet } from '../svgs/bullet';
 
-const EventAgenda = () => {
+function EventAgenda() {
   return (
     <div className="app_eventagenda_section">
       <div className="app_eventagenda_section__content app_recycathon_page__px">
@@ -14,7 +14,8 @@ const EventAgenda = () => {
             className="app_eventagenda_section__content__txt__p__about"
           >
             {' '}
-            <span className="app_eventagenda_section__content__txt__p__line"></span>{' '}
+            <span className="app_eventagenda_section__content__txt__p__line" />
+            {' '}
             EVENT AGENDA
           </Typography>
           <Typography
@@ -33,39 +34,43 @@ const EventAgenda = () => {
           >
             Waste Value
           </Typography>
-          <Typography  className="app_eventagenda_section__content__txt__p">
-            On a journey to educate young minds on the innovative ways to <br /> create
+          <Typography className="app_eventagenda_section__content__txt__p">
+            On a journey to educate young minds on the innovative ways to
+            {' '}
+            <br />
+            {' '}
+            create
             value for waste. This event entails:
-                  </Typography>
-                  <div className='app_eventagenda_section__content__txt__list_container'>
-            <div className='app_eventagenda_section__content__txt__list_container__list'>
-              <div className='app_eventagenda_section__content__txt__list_container__list__bullet'>
-            <Bullet />
+          </Typography>
+          <div className="app_eventagenda_section__content__txt__list_container">
+            <div className="app_eventagenda_section__content__txt__list_container__list">
+              <div className="app_eventagenda_section__content__txt__list_container__list__bullet">
+                <Bullet />
               </div>
-            <Typography variant='P-LG'>Online registration of participants for the competition</Typography>
+              <Typography variant="P-LG">Online registration of participants for the competition</Typography>
+            </div>
+            <div className="app_eventagenda_section__content__txt__list_container__list">
+              <div className="app_eventagenda_section__content__txt__list_container__list__bullet">
+                <Bullet />
+              </div>
+              <Typography variant="P-LG">On the D-day, participants showcase/present their innovations</Typography>
+            </div>
+            <div className="app_eventagenda_section__content__txt__list_container__list">
+              <div className="app_eventagenda_section__content__txt__list_container__list__bullet">
+                <Bullet />
+              </div>
+              <Typography variant="P-LG">Judges how are experts in the field analyze each of the innovations presented</Typography>
+            </div>
+            <div className="app_eventagenda_section__content__txt__list_container__list">
+              <div className="app_eventagenda_section__content__txt__list_container__list__bullet">
+                <Bullet />
+              </div>
+              <Typography variant="P-LG">Award presentation to the winners</Typography>
+            </div>
           </div>
-          <div className='app_eventagenda_section__content__txt__list_container__list'>
-          <div className='app_eventagenda_section__content__txt__list_container__list__bullet'>
-            <Bullet />
-              </div>
-            <Typography variant='P-LG'>On the D-day, participants showcase/present their innovations</Typography>
-          </div>
-          <div className='app_eventagenda_section__content__txt__list_container__list'>
-          <div className='app_eventagenda_section__content__txt__list_container__list__bullet'>
-            <Bullet />
-              </div>
-            <Typography variant='P-LG'>Judges how are experts in the field analyze each of the innovations presented</Typography>
-          </div>
-          <div className='app_eventagenda_section__content__txt__list_container__list'>
-          <div className='app_eventagenda_section__content__txt__list_container__list__bullet'>
-            <Bullet />
-              </div>
-            <Typography  variant='P-LG'>Award presentation to the winners</Typography>
-                  </div>
-                  </div>
         </div>
         <Image
-          src={recycathon.about_event}
+          src={recycathon.aboutEvent}
           alt=" event agenda"
           className="app_eventagenda_section__img_ct"
           priority
@@ -73,6 +78,6 @@ const EventAgenda = () => {
       </div>
     </div>
   );
-};
+}
 
 export default EventAgenda;

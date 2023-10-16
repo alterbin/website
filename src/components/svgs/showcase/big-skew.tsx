@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BigSkew = () => {
+function BigSkew() {
   return (
     <div>
       <svg
@@ -18,6 +18,6 @@ const BigSkew = () => {
       </svg>
     </div>
   );
-};
+}
 
 export default BigSkew;

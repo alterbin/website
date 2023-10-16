@@ -4,14 +4,14 @@ import recycathon from '@/utils/assets/recycathon';
 import { Typography } from '../shared';
 import Line from './line';
 
-const AboutEvent = () => {
+function AboutEvent() {
   return (
     <div className="app_aboutevent_section">
       <div className="app_aboutevent_section__content app_recycathon_page__px">
         {/* <div></div> */}
         <div className="app_aboutevent_section__content__wrapper ">
           <Image
-            src={recycathon.about_event}
+            src={recycathon.aboutEvent}
             alt="about event"
             className="app_aboutevent_section__img_ct"
             priority
@@ -22,7 +22,9 @@ const AboutEvent = () => {
               className="app_aboutevent_section__content__txt__h3"
             >
               {' '}
-              <Line /> ABOUT EVENT
+              <Line />
+              {' '}
+              ABOUT EVENT
             </Typography>
             <Typography
               fontFamily="TrenchSlab"
@@ -49,7 +51,7 @@ const AboutEvent = () => {
               ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
               molestiae.
             </Typography>
-            <button className="app_aboutevent_section__content__txt__button">
+            <button type="button" className="app_aboutevent_section__content__txt__button">
               Register
             </button>
           </div>
@@ -57,6 +59,6 @@ const AboutEvent = () => {
       </div>
     </div>
   );
-};
+}
 
 export default AboutEvent;

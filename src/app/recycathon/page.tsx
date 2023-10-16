@@ -1,8 +1,7 @@
 'use client';
 
-import { Footer } from '@/components';
+import { Footer, Navbar } from '@/components';
 import {
-  RecycathonNavbar,
   AboutEvent,
   EventAgenda,
   Competition,
@@ -15,7 +14,7 @@ export default function Page() {
   return (
     <Provider>
       <main className="app_landing_page">
-        <RecycathonNavbar />
+        <Navbar />
 
         <Hero />
 
@@ -26,6 +25,8 @@ export default function Page() {
         <Competition />
 
         <Showcase />
+
+        <Events />
 
         <Footer />
       </main>
