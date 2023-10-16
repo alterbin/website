@@ -6,8 +6,8 @@ import RightSkew from '../svgs/showcase/right-skew';
 
 function Showcase() {
   return (
-    <div className="app_showcase_section">
-      <div className="app_showcase_section__content app_recycathon_page__px">
+    <div className="app_showcase_section app_recycathon_page__px">
+      <div className="app_showcase_section__content m-0">
         <div className="app_showcase_section__content__txt">
           <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
             {' '}
