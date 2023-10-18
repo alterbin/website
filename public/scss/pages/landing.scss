@@ -101,6 +101,62 @@
 
   &__img_ct {
     max-width: 610px;
+    padding: 20px 40px;
+    position: relative;
+    opacity: 0.9;
+    z-index: 1;
+
+    &__particle{
+      position: absolute;
+      width: 610px;
+      height: 600px;
+      z-index: 2;
+      right: 6.2rem;
+      top: 6.5rem;
+      opacity: 1;
+
+      @include screen("lg"){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100px !important;
+        right: 7rem;
+      top: 27rem;
+      }
+      @include screen("md"){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100px !important;
+        min-width: 360px;
+        right: 1rem;
+      top: 27rem;
+      }
+      @include screen("sm"){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100px !important;
+        min-width: 360px;
+        right: 1rem;
+      top: 27rem;
+      }
+    }
+  }
+  #main_particle{
+    min-height: 600px;
+
+    @include screen("lg"){
+      min-height: 400px;
+    }
+    @include screen("md"){
+      min-height: 400px;
+      min-width: 360px;
+    }
+    @include screen("sm"){
+      min-height: 400px;
+      width: 360px;
+    }
   }
 }
 
