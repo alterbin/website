@@ -1,14 +1,15 @@
 'use client';
 
-import { Footer, Navbar } from '@/components';
+import { Footer } from '../../components';
 import {
   AboutEvent,
   EventAgenda,
   Competition,
   Showcase,
-} from '@/components/recycathon';
-import { Events, Hero } from '@/components/landing';
-import { Provider } from '@/contexts/global';
+  Navbar,
+  Hero,
+} from '../../components/recycathon';
+import { Provider } from '../../contexts/global';
 
 export default function Page() {
   return (
@@ -25,8 +26,6 @@ export default function Page() {
         <Competition />
 
         <Showcase />
-
-        <Events />
 
         <Footer />
       </main>

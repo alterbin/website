@@ -101,6 +101,62 @@
 
   &__img_ct {
     max-width: 610px;
+    padding: 20px 40px;
+    position: relative;
+    opacity: 0.9;
+    z-index: 1;
+
+    &__particle{
+      position: absolute;
+      width: 610px;
+      height: 600px;
+      z-index: 2;
+      right: 6.2rem;
+      top: 6.5rem;
+      opacity: 1;
+
+      @include screen("lg"){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100px !important;
+        right: 7rem;
+      top: 27rem;
+      }
+      @include screen("md"){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100px !important;
+        min-width: 360px;
+        right: 1rem;
+      top: 27rem;
+      }
+      @include screen("sm"){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100px !important;
+        min-width: 360px;
+        right: 1rem;
+      top: 27rem;
+      }
+    }
+  }
+  #main_particle{
+    min-height: 600px;
+
+    @include screen("lg"){
+      min-height: 400px;
+    }
+    @include screen("md"){
+      min-height: 400px;
+      min-width: 360px;
+    }
+    @include screen("sm"){
+      min-height: 400px;
+      width: 360px;
+    }
   }
 }
 
@@ -345,8 +401,9 @@
   &__list {
     display: flex;
     justify-content: space-around;
-    gap: 40px;
-    overflow-x: auto;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     @include screen('lg') {
       flex-direction: column;
@@ -354,7 +411,7 @@
     }
 
     .card {
-      width: 390px;
+      width: 320px;
       height: calc(100% - 42.5px); // 42.5px - item_title height
 
       @include screen('sm') {
@@ -364,7 +421,7 @@
 
     .card-body {
       flex: 1 1 auto;
-      padding: 13px 19px;
+      padding: 10px 14px;
     }
   }
 
@@ -425,7 +482,7 @@
     &__p {
       color: var(--sub-text-color);
       font-family: General Sans;
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;

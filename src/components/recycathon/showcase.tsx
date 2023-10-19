@@ -1,8 +1,6 @@
 import React from 'react';
 import { Typography } from '..';
-import BigSkew from '../svgs/showcase/big-skew';
-import LeftSkew from '../svgs/showcase/left-skew';
-import RightSkew from '../svgs/showcase/right-skew';
+import Particle from './showcase-particle/particle';
 
 function Showcase() {
   return (
@@ -26,18 +24,9 @@ function Showcase() {
             the recycathon
           </Typography>
         </div>
-
         <button type="button" className="app_showcase_section__content__btn">Register</button>
       </div>
-      <div className="app_showcase_section__content__svg_bg">
-        <BigSkew />
-      </div>
-      <div className="app_showcase_section__content__svg_lt">
-        <LeftSkew />
-      </div>
-      <div className="app_showcase_section__content__svg_rt">
-        <RightSkew />
-      </div>
+      <Particle name="showcase_particle" />
     </div>
   );
 }

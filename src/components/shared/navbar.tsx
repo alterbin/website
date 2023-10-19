@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import { useGlobalContext } from '@/contexts/global';
-import staticRoutes from '@/utils/routes';
 import Link from 'next/link';
+import Image from 'next/image';
+import { useGlobalContext } from '../../contexts/global';
+import staticRoutes from '../../utils/routes';
 import Typography from './typography';
 import Socials from './socials';
 import { Arrow } from '../svgs/arrows';
