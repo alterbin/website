@@ -1,0 +1,167 @@
+import React, { useEffect, useState } from 'react';
+import routes from '../../utils/routes';
+import { Typography } from '../shared';
+import { TimeDot } from '../svgs';
+
+function CountTimer() {
+  const targetDate = new Date('December 31, 2023 23:59:59').getTime();
+  const [countdown, setCountdown] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const currentDate = new Date().getTime();
+      const timeRemaining = targetDate - currentDate;
+
+      if (timeRemaining > 0) {
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        const minutes = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60),
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        setCountdown({
+          days,
+          hours,
+          minutes,
+          seconds,
+        });
+      } else {
+        clearInterval(interval);
+        setCountdown({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
+      }
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [targetDate]);
+
+  return (
+    <div className="recycathon__hero__section__countdown">
+      <Typography
+        fontFamily="TrenchSlab"
+        variant="h5"
+        fontWeight="bd"
+        className="recycathon__hero__section__countdown__h5"
+      >
+        Count Every Secounds Until The Event
+      </Typography>
+      <div className="recycathon__hero__section__countdown__counter">
+        <div>
+          <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
+            {countdown.days}
+          </Typography>
+          <Typography variant="p" fontWeight="rg" color="sub-text-color">
+            Days
+          </Typography>
+        </div>
+        <TimeDot />
+        <div>
+          <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
+            {countdown.hours}
+          </Typography>
+          <Typography variant="p" fontWeight="rg" color="sub-text-color">
+            Hours
+          </Typography>
+        </div>
+        <TimeDot />
+        <div>
+          <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
+            {countdown.minutes}
+          </Typography>
+          <Typography variant="p" fontWeight="rg" color="sub-text-color">
+            Minutes
+          </Typography>
+        </div>
+        <TimeDot />
+        <div>
+          <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
+            {countdown.seconds}
+          </Typography>
+          <Typography variant="P-XXS" fontWeight="rg" color="sub-text-color">
+            Seconds
+          </Typography>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Hero() {
+  return (
+    <div className="recycathon_hero_section">
+      <div className="recycathon_hero_section__container recycathon_landing_page__px">
+        <div className="recycathon_hero_section__container__content">
+          <div className="recycathon_hero_section__container__content__blur_circle">
+            <Typography
+              variant="h1"
+              fontFamily="TrenchSlab"
+              className="recycathon_hero_section__container__content__blur_circle__h1"
+            >
+              22nd
+            </Typography>
+            <Typography variant="h2" fontFamily="TrenchSlab" color="sec-color">
+              Nov
+            </Typography>
+            <Typography
+              variant="p"
+              fontFamily="TrenchSlab"
+              className="recycathon_hero_section__container__content__blur_circle__p"
+            >
+              12:00pm-4:30pm
+            </Typography>
+          </div>
+          <div className="recycathon_hero_section__container__content__txt">
+            <Typography
+              variant="h1"
+              fontFamily="TrenchSlab"
+              className="recycathon_hero_section__container__content__txt__h1"
+            >
+              Loyola College Recycathon First Edition 2023
+            </Typography>
+            <Typography
+              variant="h5"
+              id={routes.home.hash.aboutUs}
+              className="recycathon_hero_section__container__content__txt__p"
+            >
+              Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </Typography>
+            <div className="recycathon_hero_section__container__content__txt__btn">
+              <button
+                type="button"
+                className="recycathon_hero_section__container__content__txt__btn1"
+              >
+                Register
+              </button>
+              <button
+                type="button"
+                className="recycathon_hero_section__container__content__txt__btn2"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="recycathon_hero_section__timer">
+        <CountTimer />
+      </div>
+    </div>
+  );
+}

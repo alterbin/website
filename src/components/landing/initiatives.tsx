@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import routes from '@/utils/routes';
+import routes from '../../utils/routes';
 import { Arrow } from '../svgs';
 import { Typography } from '../shared';
 
