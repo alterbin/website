@@ -44,6 +44,8 @@
       flex-direction: column;
       justify-content: flex-start;
       height: 100%;
+      width: 97%;
+      margin: 0px 6px;
     }
   }
 
@@ -54,6 +56,7 @@
     max-height: 100%;
     width: 100%;
     overflow-y: auto;
+    background-color: #f3f9f9;
 
     @include screen('lg') {
       display: flex;
@@ -119,9 +122,12 @@
   background-color: #f3f9f9;
   height: 80px;
   padding: 20px 80px;
+  margin: 0px 24px;
 
   @include screen("md"){
     width: 50px;
+    margin: 0px 6px;
+    padding: 20px 30px;
   }
 }
 
