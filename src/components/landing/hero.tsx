@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import routes from '@/utils/routes';
-import landing from '@/utils/assets/landing';
+import routes from '../../utils/routes';
+import landing from '../../utils/assets/landing';
 import { Typography } from '../shared';
 import { Arrow } from '../svgs';
 import Particle from './particle';
@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
 
         <Image className="app_hero_section__img_ct" src={landing.trash} alt="" priority />
-        <Particle name="main_particle"/>
+        <Particle name="main_particle" />
       </div>
     </div>
   );
