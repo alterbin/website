@@ -1,14 +1,14 @@
-import React from "react";
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import type { Container, Engine } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
+import React, { useCallback } from 'react';
+
+import Particles from 'react-tsparticles';
+import type { Container, Engine } from 'tsparticles-engine';
+import { loadFull } from 'tsparticles';
 
 interface IParticle {
   name: string;
 }
 
-const Particle = ({ name }: IParticle) => {
+function Particle({ name }: IParticle) {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
@@ -17,30 +17,30 @@ const Particle = ({ name }: IParticle) => {
     async (container: Container | undefined) => {
       await console.log(container);
     },
-    []
+    [],
   );
 
   return (
     <Particles
-    className='app_hero_section__img_ct__particle'
+      className="app_hero_section__img_ct__particle"
       id={name}
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
         background: {
-          repeat: "no-repeat",
-          size: "cover",
+          repeat: 'no-repeat',
+          size: 'cover',
         },
         fpsLimit: 120,
         interactivity: {
           events: {
             onClick: {
               enable: false,
-              mode: "push",
+              mode: 'push',
             },
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: 'repulse',
             },
             resize: true,
           },
@@ -56,10 +56,10 @@ const Particle = ({ name }: IParticle) => {
         },
         particles: {
           color: {
-            value: "#000",
+            value: '#000',
           },
           links: {
-            color: "#ffffff",
+            color: '#ffffff',
             distance: 150,
             enable: true,
             opacity: 0,
@@ -69,10 +69,10 @@ const Particle = ({ name }: IParticle) => {
             enable: false,
           },
           move: {
-            direction: "none",
+            direction: 'none',
             enable: true,
             outModes: {
-              default: "bounce",
+              default: 'bounce',
             },
             random: false,
             speed: 2,
@@ -89,25 +89,25 @@ const Particle = ({ name }: IParticle) => {
             value: 1,
           },
           shape: {
-            type: "image",
+            type: 'image',
             images: [
               {
-                src: "/media/landing/hero/Ellipse 3.png",
+                src: '/media/landing/hero/Ellipse 3.png',
                 width: 100,
                 height: 100,
               },
               {
-                src: "/media/landing/hero/Ellipse 6.png",
+                src: '/media/landing/hero/Ellipse 6.png',
                 width: 100,
                 height: 100,
               },
               {
-                src: "/media/landing/hero/Ellipse 4.png",
+                src: '/media/landing/hero/Ellipse 4.png',
                 width: 100,
                 height: 100,
               },
               {
-                src: "/media/landing/hero/Ellipse 2.png",
+                src: '/media/landing/hero/Ellipse 2.png',
                 width: 100,
                 height: 100,
               },
@@ -129,6 +129,6 @@ const Particle = ({ name }: IParticle) => {
       }}
     />
   );
-};
+}
 
 export default Particle;
