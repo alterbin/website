@@ -69,7 +69,7 @@ function Main() {
 
       <Image style={{ visibility: 'hidden' }} className="app__header__logo d-none d-lg-flex" src="/media/logos/h-logo2.svg" width={147} height={35} alt="" priority />
 
-      <Menu className="d-block d-lg-none" />
+      <Menu className="hamburger d-block d-lg-none" />
     </div>
   );
 }
