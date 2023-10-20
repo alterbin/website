@@ -1,12 +1,11 @@
 'use client';
 
-import { Footer } from '../../components';
+import { Footer, Navbar } from '../../components';
 import {
   AboutEvent,
   EventAgenda,
   Competition,
   Showcase,
-  Navbar,
   Hero,
 } from '../../components/recycathon';
 import { Provider } from '../../contexts/global';
@@ -14,8 +13,8 @@ import { Provider } from '../../contexts/global';
 export default function Page() {
   return (
     <Provider>
-      <main className="app_landing_page">
-        <Navbar />
+      <main className="app_landing_page app_recycathon_page">
+        <Navbar variant="light" />
 
         <Hero />
 

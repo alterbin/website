@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import logos from '@/utils/assets/logos';
 import { useGlobalContext } from '../../contexts/global';
 import staticRoutes from '../../utils/routes';
 import Typography from './typography';
@@ -60,14 +61,15 @@ function Main() {
   return (
     <div className="w-100 d-flex justify-content-between align-items-center">
       <Link href={staticRoutes.home.path}>
-        <Image className="app__header__logo" src="/media/logos/h-logo2.svg" width={147} height={35} alt="" priority />
+        <Image className="app__header__logo" src={logos.logoDark} width={147} height={35} alt="" priority />
+        <Image className="app__header__logo app__header__logo--light" src={logos.logoLight} width={147} height={35} alt="" priority />
       </Link>
 
       <Routes />
 
       <Image style={{ visibility: 'hidden' }} className="app__header__logo d-none d-lg-flex" src="/media/logos/h-logo2.svg" width={147} height={35} alt="" priority />
 
-      <Menu className="d-block d-lg-none" />
+      <Menu className="hamburger d-block d-lg-none" />
     </div>
   );
 }
@@ -98,11 +100,11 @@ function MobileMenu() {
   );
 }
 
-export default function Navbar() {
+export default function Navbar({ variant = 'dark' }: { variant?: 'light' | 'dark' }) {
   const { state: { showMobileMenu } } = useGlobalContext();
 
   return (
-    <header className={`app__header ${showMobileMenu ? 'app__header--show_mobile_menu' : ''} app_landing_page__px`}>
+    <header className={`app__header app__header--${variant} ${showMobileMenu ? 'app__header--show_mobile_menu' : ''} app_landing_page__px`}>
       <Main />
 
       <MobileMenu />
