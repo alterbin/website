@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import routes from '../../utils/routes';
 import { Arrow } from '../svgs';
 import { Typography } from '../shared';
@@ -12,6 +13,7 @@ const initiatives = [
     src: `${BASE_URL}/recycathon.jpg`,
     description: 'A competitive solution to waste management problem where participants showcase creativity in converting waste into valuables.',
     linkText: 'Learn more',
+    href: routes.recycathon.path,
   },
   {
     title: 'Philan',
@@ -74,13 +76,13 @@ export default function Initiatives() {
                 </Typography>
 
                 <div className="d-flex justify-content-end">
-                  <a className="app_hero_section__content__txt__action" href="/">
+                  <Link className="app_hero_section__content__txt__action" href={item.href || ''}>
                     <Typography variant="span">
                       {item.linkText}
                     </Typography>
 
                     <Arrow />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
