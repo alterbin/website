@@ -49,6 +49,10 @@ function CountTimer() {
     };
   }, [targetDate]);
 
+  function formatCountdownValue(value: number) {
+    return value < 10 ? `0${value}` : value;
+  }
+
   return (
     <div className="recycathon__hero__section__countdown">
       <Typography
@@ -57,42 +61,42 @@ function CountTimer() {
         fontWeight="bd"
         className="recycathon__hero__section__countdown__h5"
       >
-        Count Every Secounds Until The Event
+        Count Every Seconds Until The Event
       </Typography>
       <div className="recycathon__hero__section__countdown__counter">
         <div>
           <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
-            {countdown.days}
+            {formatCountdownValue(countdown.days)}
           </Typography>
           <Typography variant="p" fontWeight="rg" color="sub-text-color">
-            Days
+            {countdown.days < 2 ? 'Day' : 'Days'}
           </Typography>
         </div>
         <TimeDot />
         <div>
           <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
-            {countdown.hours}
+            {formatCountdownValue(countdown.hours)}
           </Typography>
           <Typography variant="p" fontWeight="rg" color="sub-text-color">
-            Hours
+            {countdown.hours < 2 ? 'Hour' : 'Hours'}
           </Typography>
         </div>
         <TimeDot />
         <div>
           <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
-            {countdown.minutes}
+            {formatCountdownValue(countdown.minutes)}
           </Typography>
           <Typography variant="p" fontWeight="rg" color="sub-text-color">
-            Minutes
+            {countdown.minutes < 2 ? 'Minute' : 'Minutes'}
           </Typography>
         </div>
         <TimeDot />
         <div>
           <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
-            {countdown.seconds}
+            {formatCountdownValue(countdown.seconds)}
           </Typography>
           <Typography variant="P-XXS" fontWeight="rg" color="sub-text-color">
-            Seconds
+            {countdown.seconds < 2 ? 'Second' : 'Seconds'}
           </Typography>
         </div>
       </div>
@@ -111,10 +115,10 @@ export default function Hero() {
               fontFamily="TrenchSlab"
               className="recycathon_hero_section__container__content__blur_circle__h1"
             >
-              22nd
+              31st
             </Typography>
             <Typography variant="h2" fontFamily="TrenchSlab" color="sec-color">
-              Nov
+              Dec
             </Typography>
             <Typography
               variant="p"
