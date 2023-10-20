@@ -18,6 +18,26 @@
     }
   }
 
+  .app__header__logo--light {
+    display: none;
+  }
+
+  &--light {
+    background-color: rgba(0,0,0,.5);
+
+    .app__header__logo {
+      display: none;
+
+      &--light {
+        display: block;
+      }
+    }
+
+    .app__header__ul__li__a {
+      color: #fff;
+    }
+  }
+
   &__mobile_menu_content {
     display: none;
     // height: calc(100% - 30px - 20px - 24px);
