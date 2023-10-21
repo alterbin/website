@@ -281,17 +281,17 @@
     }
 
     &__stack {
-      background-image: url(/media/landing/objectives/sq.png);
-      background-position: center;
-      background-repeat: no-repeat;
       min-height: 613px;
       max-width: 567px;
       min-width: 567px;
       width: 100%;
       position: relative;
 
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
       @include screen('md') {
-        background-size: contain;
         max-width: 100%;
         min-width: 100%;
       }
@@ -300,51 +300,34 @@
         min-height: 410px;
       }
 
-      &__lft {
-        position: absolute;
-        left: 16px;
-        top: 6px;
-        z-index: 1;
+      &__top {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+
+        img {
+          &:first-child {
+            width: 40%;
+          }
+
+          &:last-child {
+            width: 56%;
+            max-height: 265px;
+          }
+        }
       }
 
-      &__img {
-        &--1 {
-          max-width: 420px;
-          min-width: 420px;
+      &__btm {
+        display: flex;
+        gap: 10px;
 
-          @include screen('md') {
-            max-width: 380px;
-            min-width: 380px;
+        img {
+          &:first-child {
+            width: 34%;
           }
 
-          @include screen('sm') {
-            max-width: 270px;
-            min-width: 270px;
-          }
-        }
-
-        &--2 {
-          max-width: 247px;
-          margin-top: 12px;
-
-          @include screen('sm') {
-            max-width: 163px;
-          }
-        }
-
-        &--3 {
-          position: absolute;
-          max-width: 251px;
-          bottom: -24px;
-          right: 12px;
-
-          @include screen('md') {
-            right: 42px;
-          }
-
-          @include screen('sm') {
-            right: 12px;
-            max-width: 166px;
+          &:last-child {
+            width: 66%;
           }
         }
       }
