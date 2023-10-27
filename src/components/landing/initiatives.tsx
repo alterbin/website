@@ -20,7 +20,7 @@ const initiatives = [
     subTitle: 'Mobile Application',
     src: `${BASE_URL}/philan.jpg`,
     description: 'A digital platform that promotes supervised and controlled transfer of ownership of personal belongings deemed as waste by giver but valuable by receiver.',
-    linkText: 'Learn more',
+    linkText: 'Coming soon',
   },
   {
     title: 'Marketplace',
@@ -64,25 +64,33 @@ export default function Initiatives() {
             </div>
 
             <div className="app_initiatives__card card">
-              <div className="card-body">
-                <Image className="app_initiatives__card__img" src={item.src} width={147} height={35} alt="" priority />
+              <div className="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <Image className="app_initiatives__card__img" src={item.src} width={147} height={35} alt="" priority />
 
-                <Typography className="app_initiatives__card__h5" fontFamily="TrenchSlab" fontWeight="md" variant="h5">
-                  {item.subTitle}
-                </Typography>
+                  <Typography className="app_initiatives__card__h5" fontFamily="TrenchSlab" fontWeight="md" variant="h5">
+                    {item.subTitle}
+                  </Typography>
 
-                <Typography className="app_initiatives__card__p">
-                  {item.description}
-                </Typography>
+                  <Typography className="app_initiatives__card__p">
+                    {item.description}
+                  </Typography>
+                </div>
 
                 <div className="d-flex justify-content-end">
-                  <Link className="app_hero_section__content__txt__action" href={item.href || ''}>
-                    <Typography variant="span">
+                  {item.href ? (
+                    <Link className="app_hero_section__content__txt__action" href={item.href || ''}>
+                      <Typography variant="span">
+                        {item.linkText}
+                      </Typography>
+
+                      <Arrow />
+                    </Link>
+                  ) : (
+                    <Typography color="sec-color" variant="span">
                       {item.linkText}
                     </Typography>
-
-                    <Arrow />
-                  </Link>
+                  )}
                 </div>
               </div>
             </div>

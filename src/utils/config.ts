@@ -1,4 +1,8 @@
 const config = {
+  CONTACT_US: {
+    email: 'hello@alterbin.com',
+    phone: '',
+  },
   SITE_URL: 'https://alterbin-website.vercel.app',
   tokenKey: 'adinoe-tkq',
   services: {

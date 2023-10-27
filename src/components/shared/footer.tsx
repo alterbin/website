@@ -75,7 +75,9 @@ function FooterC() {
             <div className="app_footer__contact_us__con__info__item">
               <Message />
 
-              <Typography color="sub-text-color" variant="span">hello@alterbin.com</Typography>
+              <a href={`mailto:${config.CONTACT_US.email}`} style={{ textDecoration: 'none' }}>
+                <Typography color="sub-text-color" variant="span">{config.CONTACT_US.email}</Typography>
+              </a>
             </div>
 
             <div className="app_footer__contact_us__con__info__item">
@@ -102,7 +104,9 @@ function FooterC() {
             Creating value for waste.
           </Typography>
 
-          <Typography variant="span">waste@alterbin.com</Typography>
+          <a href={`mailto:${config.CONTACT_US.email}`} style={{ color: '#fefefe' }}>
+            <Typography variant="span">{config.CONTACT_US.email}</Typography>
+          </a>
         </div>
 
         <div className="app_footer__content__item">
@@ -111,7 +115,9 @@ function FooterC() {
           </Typography>
 
           <div className="app_footer__content__item__text">
-            <Typography variant="p">Recycathon</Typography>
+            <a href={routes.recycathon.path} style={{ color: '#fefefe' }}>
+              <Typography variant="p">Recycathon</Typography>
+            </a>
             <Typography variant="p">Philan Mobile App</Typography>
             <Typography variant="p">Marketplace</Typography>
           </div>
@@ -123,9 +129,13 @@ function FooterC() {
           </Typography>
 
           <div className="app_footer__content__item__text">
-            <Typography variant="p"> About Us</Typography>
-            <Typography variant="p">Press</Typography>
-            <Typography variant="p">Contact Us</Typography>
+            <a href={`#${routes.home.hash.aboutUs}`} style={{ color: '#fefefe' }}>
+              <Typography variant="p">About Us</Typography>
+            </a>
+
+            <a href={`#${routes.home.hash.contactUs}`} style={{ color: '#fefefe' }}>
+              <Typography variant="p">Contact Us</Typography>
+            </a>
           </div>
         </div>
 

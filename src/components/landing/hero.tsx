@@ -23,13 +23,15 @@ export default function Hero() {
             Creating value for waste.
           </Typography>
 
-          <a className="app_hero_section__content__txt__action" href="/">
-            <Arrow />
+          {false && (
+            <a className="app_hero_section__content__txt__action" href="/">
+              <Arrow />
 
-            <Typography fontFamily="TrenchSlab" variant="span" id={routes.home.hash.aboutUs}>
-              Learn more
-            </Typography>
-          </a>
+              <Typography fontFamily="TrenchSlab" variant="span" id={routes.home.hash.aboutUs}>
+                Learn more
+              </Typography>
+            </a>
+          )}
         </div>
 
         <Image className="app_hero_section__img_ct" src={landing.trash} alt="" priority />
