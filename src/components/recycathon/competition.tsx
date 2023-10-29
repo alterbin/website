@@ -136,7 +136,7 @@ function Judges() {
             />
             <div className="app_judges_section__content__img_txt">
               <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
-                Tony Danza
+                Anonymous
               </Typography>
               <Typography>Role</Typography>
             </div>
@@ -150,7 +150,7 @@ function Judges() {
             />
             <div className="app_judges_section__content__img_txt">
               <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
-                Peter Thornton
+                Anonymous
               </Typography>
               <Typography>Role</Typography>
             </div>
@@ -164,7 +164,7 @@ function Judges() {
             />
             <div className="app_judges_section__content__img_txt">
               <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
-                Willie Tanner
+                Anonymous
               </Typography>
               <Typography variant="P-XXS">Role</Typography>
             </div>
