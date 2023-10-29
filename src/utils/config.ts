@@ -9,6 +9,7 @@ const config = {
     google: {
       sheets: {
         WEB_APP_URL: 'https://script.google.com/macros/s/AKfycbwfal8tVMs335cJfR3bSwvkAGaUl8U1Atb2KNFpLyxstdpFmGkshYNYIPpi5IeiGaDbKw/exec',
+        RECYCATHON_WEB_APP_URL: 'https://script.google.com/macros/s/AKfycbzEZi0ft178Q90BXl_EfhBIHKx2Ecb3Vy5_B6oDR2QE0ET_n8Qgs9xeX1irDPzIIAyjQw/exec',
       },
     },
   },

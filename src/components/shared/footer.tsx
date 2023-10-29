@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import routes from '@/utils/routes';
 import config from '@/utils/config';
 import { FormEvent, useState } from 'react';
@@ -7,7 +8,7 @@ import { Call, Message } from '../svgs';
 import Typography from './typography';
 import Socials from './socials';
 
-const { WEB_APP_URL } = config.services.google.sheets;
+const { WEB_APP_URL: MAIN_WEB_APP_URL, RECYCATHON_WEB_APP_URL } = config.services.google.sheets;
 
 function Union() {
   return (
@@ -29,6 +30,12 @@ function FooterBtm() {
 
 function FooterC() {
   const [loading, setLoading] = useState(false);
+
+  const pathname = usePathname();
+
+  const isRecycathon = routes.recycathon.path === pathname;
+
+  const WEB_APP_URL = isRecycathon ? RECYCATHON_WEB_APP_URL : MAIN_WEB_APP_URL;
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
