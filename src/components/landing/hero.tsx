@@ -11,16 +11,16 @@ export default function Hero() {
       <div className="app_hero_section__content app_landing_page__px">
         <div className="app_hero_section__content__txt">
           <Typography className="app_hero_section__content__txt__h1" fontFamily="TrenchSlab" fontWeight="md" variant="h1">
-            Waste is not just a problem—it&lsquo;s an
+            Fostering
             {' '}
             <br className="d-none d-lg-flex" />
-            <span>opportunity</span>
+            <span>solutions</span>
             {' '}
-            for change
+            for waste management challenges.
           </Typography>
 
           <Typography className="app_hero_section__content__txt__p">
-            Creating value for waste.
+            Alterbin provides creative and innovative initiatives to transform waste for a suitable future. 
           </Typography>
 
           {false && (

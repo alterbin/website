@@ -19,14 +19,14 @@ const initiatives = [
     title: 'Philan',
     subTitle: 'Mobile Application',
     src: `${BASE_URL}/philan.jpg`,
-    description: 'A digital platform that promotes supervised and controlled transfer of ownership of personal belongings deemed as waste by giver but valuable by receiver.',
+    description: 'A secure online platform for exchanging unwanted items or personal belongings, turning waste into treasures.',
     linkText: 'Coming soon',
   },
   {
     title: 'Marketplace',
     subTitle: 'Marketplace',
     src: `${BASE_URL}/marketplace.jpg`,
-    description: 'An ecommerce platform where users exchange collectible waste for money.',
+    description: 'An ecommerce platform where users buy and sell, exchanging collectible waste for money.',
     linkText: 'Coming soon',
   },
   {
@@ -47,10 +47,10 @@ export default function Initiatives() {
         </Typography>
 
         <Typography className="app_mission__top__p">
-          With our innovative solutions and cutting-edge technologies,
+          Discover Our Comprehensive Portfolio of Sustainable Initiatives and Impactful Projects.
           {' '}
           <br />
-          we&apos;re here to make a lasting difference for our planet.
+          Explore Our Sustainable Initiatives.
         </Typography>
       </div>
 
