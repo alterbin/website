@@ -5,9 +5,7 @@ import { Typography } from '../shared';
 const BASE_URL = '/media/landing/events';
 
 const events = [
-  { title: 'Loyola College Recycathon First Edition 2023', desc: 'Recycathon Competition', src: `${BASE_URL}/1.jpg` },
-  { title: 'Loyola College Recycathon Second Edition 2023', desc: 'Philan Mobile Application', src: `${BASE_URL}/2.jpg` },
-  { title: 'Innovative Waste Management Seminar V1.0', desc: 'Recyclable Marketplace', src: `${BASE_URL}/3.jpg` },
+  { title: 'Basorun High School Ibadan Getting Started With Recycathon (Edition 2023)', desc: 'Recycathon Competition', src: `${BASE_URL}/1.jpg` },
 ];
 
 function Blob() {
@@ -170,21 +168,22 @@ export default function Events() {
               <div className="card-body">
                 <div className="app_events__con__gallery__date">
                   <Typography className="app_events__con__gallery__month" color="sec-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
-                    Apr
+                    Nov
                   </Typography>
 
                   <Typography className="app_events__con__gallery__h3" color="text-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
-                    14
+                    1st
                   </Typography>
                 </div>
 
                 <div>
                   <Typography className="app_events__con__gallery__h5" color="text-color" fontFamily="TrenchSlab" fontWeight="md" variant="h5">
-                    Loyola College Recycathon First Edition 2023
+                    {item.title}
                   </Typography>
 
                   <Typography className="app_events__con__gallery__span" color="sub-text-color" variant="span">
-                    Jorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges, 
+                    while also learning about the importance of sustainable practices.
                   </Typography>
                 </div>
               </div>
