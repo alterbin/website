@@ -24,7 +24,7 @@ function AboutEvent() {
               {' '}
               <Line />
               {' '}
-              ABOUT EVENT
+              ABOUT
             </Typography>
             <Typography
               fontFamily="TrenchSlab"
@@ -32,24 +32,18 @@ function AboutEvent() {
               variant="h1"
               className="app_aboutevent_section__content__txt__title"
             >
-              Loyola College Recycathon
-            </Typography>
-            <Typography
-              fontFamily="TrenchSlab"
-              fontWeight="md"
-              variant="h1"
-              className="app_aboutevent_section__content__txt__title__second"
-            >
-              First Edition 2023
+              Recycathon 2023
             </Typography>
             <Typography className="app_aboutevent_section__content__txt__p">
-              Gorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              veniam eveniet est repudiandae cumque. Repudiandae at dignissimos
-              possimus quas laboriosam, veniam consectetur enim exercitationem
-              repellat omnis deleniti quidem distinctio nisi recusandae laborum,
-              voluptatibus nobis sint libero dolor. Sed, aliquid dolore. Lorem,
-              ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-              molestiae.
+              The Recycathon is aimed at transforming collectible waste into valuable finished products. 
+              We seek the support of schools for sensitizing students on creative waste management. 
+              We do this by catching their attention through the engagement of their curious creative minds.
+            </Typography>
+            <Typography className="app_aboutevent_section__content__txt__p">
+              The features creative displays, judging panels, and a prize-giving ceremony to recognize and 
+              reward the outstanding contributions of our students. "Recycathon" will provide a platform for students 
+              to apply their problem-solving skills, foster creativity, and learn about the importance of waste management 
+              practically and engagingly.
             </Typography>
             <button type="button" className="app_aboutevent_section__content__txt__button">
               Register

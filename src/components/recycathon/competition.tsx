@@ -48,14 +48,7 @@ function Award() {
                 className="app_award_section__content__performance__reward__text"
               >
                 <Bullet />
-                <p>Reward 1</p>
-              </Typography>
-              <Typography
-                variant="P-SM"
-                className="app_award_section__content__performance__reward__text"
-              >
-                <Bullet />
-                <p>Reward 2</p>
+                <p>₦30,000.00</p>
               </Typography>
             </div>
           </div>
@@ -76,14 +69,7 @@ function Award() {
                 className="app_award_section__content__performance__reward__text"
               >
                 <Bullet />
-                <p>Reward 1</p>
-              </Typography>
-              <Typography
-                variant="P-SM"
-                className="app_award_section__content__performance__reward__text"
-              >
-                <Bullet />
-                <p>Reward 2</p>
+                <p>₦50,000.00</p>
               </Typography>
             </div>
           </div>
@@ -104,14 +90,7 @@ function Award() {
                 className="app_award_section__content__performance__reward__text"
               >
                 <Bullet />
-                <p>Reward 1</p>
-              </Typography>
-              <Typography
-                variant="P-SM"
-                className="app_award_section__content__performance__reward__text"
-              >
-                <Bullet />
-                <p>Reward 2</p>
+                <p>₦10,000.00</p>
               </Typography>
             </div>
           </div>

@@ -16,7 +16,7 @@ function EventAgenda() {
             {' '}
             <span className="app_eventagenda_section__content__txt__p__line" />
             {' '}
-            EVENT AGENDA
+            AGENDA
           </Typography>
           <Typography
             fontFamily="TrenchSlab"
@@ -35,12 +35,11 @@ function EventAgenda() {
             Waste Value
           </Typography>
           <Typography className="app_eventagenda_section__content__txt__p">
-            On a journey to educate young minds on the innovative ways to
+            On a journey to educate young minds on the creative and innovative ways to
             {' '}
             <br />
             {' '}
-            create
-            value for waste. This event entails:
+            create value for waste. This event entails:
           </Typography>
           <div className="app_eventagenda_section__content__txt__list_container">
             <div className="app_eventagenda_section__content__txt__list_container__list">

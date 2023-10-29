@@ -134,17 +134,14 @@ export default function Hero() {
               fontFamily="TrenchSlab"
               className="recycathon_hero_section__container__content__txt__h1"
             >
-              Loyola College Recycathon First Edition 2023
+              A competitive solution to waste management challenges.
             </Typography>
             <Typography
               variant="h5"
               id={routes.home.hash.aboutUs}
               className="recycathon_hero_section__container__content__txt__p"
             >
-              Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos.
+              An exciting intra-school competition aimed at addressing waste management challenges and encouraging creative solutions to the issue.
             </Typography>
             <div className="recycathon_hero_section__container__content__txt__btn">
               <button
