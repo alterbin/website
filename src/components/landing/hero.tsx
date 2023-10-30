@@ -20,7 +20,8 @@ export default function Hero() {
           </Typography>
 
           <Typography className="app_hero_section__content__txt__p">
-            Alterbin provides creative and innovative initiatives to transform waste for a suitable future. 
+            {/* eslint-disable-next-line max-len */}
+            Alterbin provides creative and innovative initiatives to transform waste for a suitable future.
           </Typography>
 
           {false && (

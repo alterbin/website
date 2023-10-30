@@ -141,6 +141,7 @@ export default function Hero() {
               id={routes.home.hash.aboutUs}
               className="recycathon_hero_section__container__content__txt__p"
             >
+              {/* eslint-disable-next-line max-len */}
               An exciting intra-school competition aimed at addressing waste management challenges and encouraging creative solutions to the issue.
             </Typography>
             <div className="recycathon_hero_section__container__content__txt__btn">

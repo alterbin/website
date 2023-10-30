@@ -15,6 +15,7 @@ function Particle({ name }: IParticle) {
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
+      // eslint-disable-next-line no-console
       await console.log(container);
     },
     [],

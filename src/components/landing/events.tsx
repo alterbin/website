@@ -182,7 +182,8 @@ export default function Events() {
                   </Typography>
 
                   <Typography className="app_events__con__gallery__span" color="sub-text-color" variant="span">
-                    Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges, 
+                    {/* eslint-disable-next-line max-len */}
+                    Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges,
                     while also learning about the importance of sustainable practices.
                   </Typography>
                 </div>
