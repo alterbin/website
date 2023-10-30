@@ -150,13 +150,13 @@ export default function Events() {
           </Typography>
 
           <div className="app_events__con__evt d-flex justify-content-center">
-            <a className="app_events__con__evt_a" href="http://">
+            <div className="app_events__con__evt_a">
               <Typography color="sec-color" variant="span">Upcoming Events</Typography>
-            </a>
+            </div>
 
-            <a className="app_events__con__evt_a--disabled" href="http://">
+            <div className="app_events__con__evt_a--disabled">
               <Typography color="sec-color" variant="span">Past Events</Typography>
-            </a>
+            </div>
           </div>
         </div>
 
