@@ -692,7 +692,7 @@
 .app_judges_section {
   min-height: calc(100vh - 10px);
   padding-top: calc(0px + 0px); // 5px - header height
-  padding-bottom: calc(0px + 20px); // 85px - header height
+  padding-bottom: calc(40px + 20px); // 85px - header height
   background-color: #ffffff;
   &__content {
     display: flex;
@@ -717,6 +717,7 @@
     &__container {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
+      
 
       @include screen('lg') {
         grid-template-columns: repeat(1, 1fr);
@@ -751,7 +752,7 @@
   }
   @include screen('md') {
     min-height: calc(35vh - 10px);
-    padding-bottom: calc(0px + 0px);
+    padding-bottom: calc(50px + 70px);
   }
   &__content {
     display: flex;
