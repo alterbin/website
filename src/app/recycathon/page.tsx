@@ -1,6 +1,7 @@
 'use client';
 
-import { Footer, Navbar } from '../../components';
+import { recycathonMetaData } from '@/utils/static';
+import { Footer, Metas, Navbar } from '../../components';
 import {
   AboutEvent,
   EventAgenda,
@@ -13,6 +14,8 @@ import { Provider } from '../../contexts/global';
 export default function Page() {
   return (
     <Provider>
+      <Metas data={recycathonMetaData} />
+
       <main className="app_landing_page app_recycathon_page">
         <Navbar variant="light" />
 

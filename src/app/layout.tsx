@@ -9,34 +9,18 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import generateColorsCss from '@/utils/colors';
 import { Metas } from '@/components/shared/metas';
-import { metaData } from '@/utils/static';
 import { ReactNode } from 'react';
+import { getMetadata } from '@/utils';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: metaData.siteName,
-  description: metaData.description,
-  openGraph: {
-    ...metaData,
-    type: 'website',
-    images: [{
-      url: metaData.image,
-    }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    site: `@${metaData.url}`,
-    creator: `@${metaData.siteName}`,
-    images: metaData.image,
-  },
-};
+export const metadata: Metadata = getMetadata();
 
-export default function RootLayout({
-  children,
-}: {
+type Props = {
   children: ReactNode
-}) {
+}
+
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <Metas>
