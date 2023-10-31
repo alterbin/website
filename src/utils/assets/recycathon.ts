@@ -2,12 +2,12 @@ import aboutEvent from '../../../public/media/recycathon/about-event.jpg';
 import winner from '../../../public/media/recycathon/performance/winner.jpg';
 import second from '../../../public/media/recycathon/performance/first-runner-up.png';
 import third from '../../../public/media/recycathon/performance/second-runner-up.jpg';
-import tony from '../../../public/media/recycathon/judges/tony-danza.jpg';
-import peter from '../../../public/media/recycathon/judges/peter.jpg';
-import willie from '../../../public/media/recycathon/judges/willie.jpg';
+import judge1 from '../../../public/media/recycathon/judges/avatar1.jpg';
+import judge2 from '../../../public/media/recycathon/judges/avatar2.jpg';
+import judge3 from '../../../public/media/recycathon/judges/avatar3.jpg';
 
 const recycathon = {
-  aboutEvent, winner, second, third, tony, willie, peter,
+  aboutEvent, winner, second, third, judge1, judge2, judge3,
 };
 
 export default recycathon;

@@ -129,7 +129,7 @@ function Judges() {
         <div className="app_judges_section__content__container">
           <div className="app_judges_section__content__img">
             <Image
-              src={assets.recycathon.tony}
+              src={assets.recycathon.judge1}
               alt=""
               priority
               className="app_judges_section__content__img_ct"
@@ -138,12 +138,12 @@ function Judges() {
               <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
                 Anonymous
               </Typography>
-              <Typography>Role</Typography>
+              {/* <Typography>Role</Typography> */}
             </div>
           </div>
           <div className="app_judges_section__content__img">
             <Image
-              src={assets.recycathon.peter}
+              src={assets.recycathon.judge2}
               alt=""
               priority
               className="app_judges_section__content__img_ct"
@@ -152,12 +152,12 @@ function Judges() {
               <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
                 Anonymous
               </Typography>
-              <Typography>Role</Typography>
+              {/* <Typography>Role</Typography> */}
             </div>
           </div>
           <div className="app_judges_section__content__img">
             <Image
-              src={assets.recycathon.willie}
+              src={assets.recycathon.judge3}
               alt=""
               priority
               className="app_judges_section__content__img_ct"
@@ -166,7 +166,7 @@ function Judges() {
               <Typography fontFamily="TrenchSlab" variant="h5" fontWeight="md">
                 Anonymous
               </Typography>
-              <Typography variant="P-XXS">Role</Typography>
+              {/* <Typography variant="P-XXS">Role</Typography> */}
             </div>
           </div>
         </div>
