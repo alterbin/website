@@ -1,3 +1,4 @@
+import config from '@/utils/config';
 import React, { useEffect, useState } from 'react';
 import routes from '../../utils/routes';
 import { Typography } from '../shared';
@@ -145,12 +146,14 @@ export default function Hero() {
               An exciting intra-school competition aimed at addressing waste management challenges and encouraging creative solutions to the issue.
             </Typography>
             <div className="recycathon_hero_section__container__content__txt__btn">
-              <button
-                type="button"
-                className="recycathon_hero_section__container__content__txt__btn1"
-              >
-                Register
-              </button>
+              <a href={config.services.google.forms.RECYCATHON_REGISTRATION} target="_blank" rel="noopener noreferrer">
+                <button
+                  type="button"
+                  className="recycathon_hero_section__container__content__txt__btn1"
+                >
+                  Register
+                </button>
+              </a>
               <button
                 type="button"
                 className="recycathon_hero_section__container__content__txt__btn2"
