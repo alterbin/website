@@ -1,3 +1,4 @@
+import config from '@/utils/config';
 import React from 'react';
 import { Typography } from '..';
 import Particle from './showcase-particle/particle';
@@ -24,7 +25,9 @@ function Showcase() {
             the recycathon
           </Typography>
         </div>
-        <button type="button" className="app_showcase_section__content__btn">Register</button>
+        <a style={{ textDecoration: 'none', visibility: 'hidden' }} href={config.services.google.forms.RECYCATHON_REGISTRATION} target="_blank" rel="noopener noreferrer">
+          <button type="button" className="app_showcase_section__content__btn">Register</button>
+        </a>
       </div>
       <Particle name="showcase_particle" />
     </div>

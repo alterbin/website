@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+import config from '@/utils/config';
 import Image from 'next/image';
 import React from 'react';
 import recycathon from '@/utils/assets/recycathon';
@@ -46,9 +47,14 @@ function AboutEvent() {
               to apply their problem-solving skills, foster creativity, and learn about the importance of waste management
               practically and engagingly.
             </Typography>
-            <button type="button" className="app_aboutevent_section__content__txt__button">
-              Register
-            </button>
+            <a href={config.services.google.forms.RECYCATHON_REGISTRATION} target="_blank" rel="noopener noreferrer">
+              <button
+                type="button"
+                className="app_aboutevent_section__content__txt__button px-5"
+              >
+                Register
+              </button>
+            </a>
           </div>
         </div>
       </div>
