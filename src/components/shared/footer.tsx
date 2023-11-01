@@ -23,7 +23,7 @@ function FooterBtm() {
     <>
       <Socials />
 
-      <Typography variant="span">Copyright © 2023 Alterbin Tech</Typography>
+      <Typography variant="span">Copyright © 2023 Alterbin Technologies</Typography>
     </>
   );
 }
@@ -153,8 +153,7 @@ function FooterC() {
 
           <div>
             <Typography variant="span" fontWeight="lt">
-              Join our mailing list to stay in the loop on how we a creating a
-              sustainable environment
+              Join our mailing list to stay in the loop on how we are creating a sustainable environment
             </Typography>
           </div>
 
