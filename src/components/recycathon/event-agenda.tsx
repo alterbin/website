@@ -69,7 +69,7 @@ function EventAgenda() {
           </div>
         </div>
         <Image
-          src={recycathon.aboutEvent}
+          src={recycathon.aboutEvent1}
           alt=" event agenda"
           className="app_eventagenda_section__img_ct"
           priority

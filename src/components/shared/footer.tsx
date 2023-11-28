@@ -153,7 +153,8 @@ function FooterC() {
 
           <div>
             <Typography variant="span" fontWeight="lt">
-              Join our mailing list to stay in the loop on how we are creating a sustainable environment
+              Join our mailing list to stay in the loop on how we are creating a
+              sustainable environment
             </Typography>
           </div>
 
