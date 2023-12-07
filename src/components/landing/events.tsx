@@ -1,11 +1,21 @@
 import Image from 'next/image';
+import { useState } from 'react';
+import format from 'date-fns/format';
 import routes from '@/utils/routes';
 import { Typography } from '../shared';
 
 const BASE_URL = '/media/landing/events';
 
-const events = [
-  { title: 'Basorun High School Ibadan Getting Started With Recycathon (Edition 2023)', desc: 'Recycathon Competition', src: `${BASE_URL}/1.jpg` },
+const upcomingEvents = [
+  {
+    date: new Date('March 31, 2024 23:59:59'), title: 'Loyola College Recycathon First Edition 2023', desc: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit.', src: `${BASE_URL}/1.jpg`,
+  },
+];
+
+const pastEvents = [
+  {
+    date: new Date('November 1, 2023 23:59:59'), title: 'Basorun High School Ibadan Getting Started With Recycathon (Edition 2023)', desc: 'Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges, while also learning about the importance of sustainable practices.', src: `${BASE_URL}/bashorun.jpg`,
+  },
 ];
 
 function Blob() {
@@ -136,6 +146,10 @@ function Organizations() {
 }
 
 export default function Events() {
+  const [activeEvent, setActiveEvent] = useState<'Upcoming' | 'Past'>('Upcoming');
+
+  const events = activeEvent === 'Upcoming' ? upcomingEvents : pastEvents;
+
   return (
     <div className="app_events" id={routes.home.hash.events}>
       <div className="app_events__con app_landing_page__px">
@@ -150,11 +164,11 @@ export default function Events() {
           </Typography>
 
           <div className="app_events__con__evt d-flex justify-content-center">
-            <div className="app_events__con__evt_a">
+            <div role="none" onClick={() => setActiveEvent('Upcoming')} className={`cursor-pointer app_events__con__evt_a${activeEvent === 'Upcoming' ? '' : '--disabled'}`}>
               <Typography color="sec-color" variant="span">Upcoming Events</Typography>
             </div>
 
-            <div className="app_events__con__evt_a--disabled">
+            <div role="none" onClick={() => setActiveEvent('Past')} className={`cursor-pointer app_events__con__evt_a${activeEvent === 'Past' ? '' : '--disabled'}`}>
               <Typography color="sec-color" variant="span">Past Events</Typography>
             </div>
           </div>
@@ -168,11 +182,11 @@ export default function Events() {
               <div className="card-body">
                 <div className="app_events__con__gallery__date">
                   <Typography className="app_events__con__gallery__month" color="sec-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
-                    Nov
+                    {format(item.date, 'MMM')}
                   </Typography>
 
                   <Typography className="app_events__con__gallery__h3" color="text-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
-                    1st
+                    {format(item.date, 'do')}
                   </Typography>
                 </div>
 
@@ -182,9 +196,7 @@ export default function Events() {
                   </Typography>
 
                   <Typography className="app_events__con__gallery__span" color="sub-text-color" variant="span">
-                    {/* eslint-disable-next-line max-len */}
-                    Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges,
-                    while also learning about the importance of sustainable practices.
+                    {item.desc}
                   </Typography>
                 </div>
               </div>

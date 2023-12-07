@@ -5,7 +5,7 @@ import { Typography } from '../shared';
 import { TimeDot } from '../svgs';
 
 function CountTimer() {
-  const targetDate = new Date('December 31, 2023 23:59:59').getTime();
+  const targetDate = new Date('March 31, 2024 23:59:59').getTime();
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
@@ -119,7 +119,7 @@ export default function Hero() {
               31st
             </Typography>
             <Typography variant="h2" fontFamily="TrenchSlab" color="sec-color">
-              Dec
+              Mar
             </Typography>
             <Typography
               variant="p"
