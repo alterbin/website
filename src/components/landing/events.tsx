@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import format from 'date-fns/format';
 import routes from '@/utils/routes';
+import landing from '@/utils/assets/landing';
 import { Typography } from '../shared';
 
 const BASE_URL = '/media/landing/events';
@@ -126,6 +127,12 @@ function Crop2Cash() {
   );
 }
 
+function HeyFood() {
+  return (
+    <Image style={{ width: 162 }} src={landing.heyfood} alt="heyfood" />
+  );
+}
+
 function Organizations() {
   return (
     <div className="app_events__con__organizations">
@@ -141,6 +148,7 @@ function Organizations() {
       )}
 
       <Crop2Cash />
+      <HeyFood />
     </div>
   );
 }
