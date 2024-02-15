@@ -8,7 +8,7 @@ const BASE_URL = '/media/landing/events';
 
 const upcomingEvents = [
   {
-    date: new Date('March 31, 2024 23:59:59'), title: 'Loyola College Recycathon First Edition 2023', desc: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit.', src: `${BASE_URL}/1.jpg`,
+    date: new Date('March 31, 2024 23:59:59'), title: 'Basorun High School Ibadan Recycathon Exhibition (Edition 2024)', desc: 'Get ready for an exhilarating showcase of innovation and sustainability! After weeks of hard work and dedication, the talented students of Basorun High School are gearing up for the grand finale of Recycathon 2024.', src: `${BASE_URL}/3.jpg`,
   },
 ];
 
@@ -188,6 +188,11 @@ export default function Events() {
                   <Typography className="app_events__con__gallery__h3" color="text-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
                     {format(item.date, 'do')}
                   </Typography>
+
+                  <Typography className="app_events__con__gallery__month" color="sec-color" fontFamily="TrenchSlab" fontWeight="sb" variant="h3">
+                    {format(item.date, 'YYY')}
+                  </Typography>
+
                 </div>
 
                 <div>
