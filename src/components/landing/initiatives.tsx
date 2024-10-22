@@ -8,14 +8,6 @@ const BASE_URL = '/media/landing/initiatives';
 
 const initiatives = [
   {
-    title: 'Recycathon',
-    subTitle: 'Competition',
-    src: `${BASE_URL}/recycathon.jpg`,
-    description: 'A competitive solution to waste management problem where participants showcase creativity in converting waste into valuables.',
-    linkText: 'Learn more',
-    href: routes.recycathon.path,
-  },
-  {
     title: 'Philan',
     subTitle: 'Mobile Application',
     src: `${BASE_URL}/philan.jpg`,
@@ -23,17 +15,10 @@ const initiatives = [
     linkText: 'Coming soon',
   },
   {
-    title: 'Marketplace',
-    subTitle: 'Marketplace',
-    src: `${BASE_URL}/marketplace.jpg`,
-    description: 'An ecommerce platform where users buy and sell, exchanging collectible waste for money.',
-    linkText: 'Coming soon',
-  },
-  {
     title: 'Recyschool',
     subTitle: 'Education',
     src: `${BASE_URL}/recycathon.jpg`,
-    description: 'Providing education in waste affected rural areas where students pay fee using waste collected from their immediate environment.',
+    description: 'Supporting education through sensitization and rewarding students for their efforts in waste management projects.',
     linkText: 'Coming soon',
   },
 ];

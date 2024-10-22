@@ -85,11 +85,11 @@ export default function Mission() {
         </Typography>
 
         <Typography className="app_mission__top__p">
-          Our mission at Alterbin is to revolutionize waste management and pave the way towards
+          Our mission is to lead and scale innovations that promote and realize
           {' '}
           <br />
           <span>
-            more sustainable future by:
+            effective waste management in a sustainable way.
             <Blob />
           </span>
         </Typography>

@@ -9,7 +9,7 @@ const BASE_URL = '/media/landing/events';
 
 const upcomingEvents = [
   {
-    date: new Date('March 31, 2024 23:59:59'), title: 'Basorun High School Ibadan Recycathon Exhibition (Edition 2024)', desc: 'Get ready for an exhilarating showcase of innovation and sustainability! After weeks of hard work and dedication, the talented students of Basorun High School are gearing up for the grand finale of Recycathon 2024.', src: `${BASE_URL}/3.jpg`,
+    date: new Date('November 14, 2024 23:59:59'), title: 'Urban Day Secondary 2 Ibadan Recyschool (Edition 2024)', desc: 'Sensitizing the students on creative recycling practices that are lucrative. Introducing students to the business of waste thus encouraging the reimagination waste as a valuable resource.', src: `${BASE_URL}/3.jpg`,
   },
 ];
 
