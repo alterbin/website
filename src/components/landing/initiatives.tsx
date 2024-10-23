@@ -13,6 +13,7 @@ const initiatives = [
     src: `${BASE_URL}/philan.jpg`,
     description: 'A secure online platform for exchanging unwanted items or personal belongings, turning waste into treasures.',
     linkText: 'Coming soon',
+    href: undefined,
   },
   {
     title: 'Recyschool',
@@ -20,6 +21,7 @@ const initiatives = [
     src: `${BASE_URL}/recycathon.jpg`,
     description: 'Supporting education through sensitization and rewarding students for their efforts in waste management projects.',
     linkText: 'Coming soon',
+    href: undefined,
   },
 ];
 
