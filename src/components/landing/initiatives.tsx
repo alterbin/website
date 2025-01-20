@@ -9,7 +9,7 @@ const BASE_URL = '/media/landing/initiatives';
 
 const initiatives = [
   {
-    title: 'Philanbin',
+    title: 'Philan',
     subTitle: 'Social Philanthropy',
     src: `${BASE_URL}/philan.jpg`,
     description: 'Encouraging and enabling the giving away of items people no longer need to those who can reuse or repurpose them, thus reducing waste and promoting sustainability.',

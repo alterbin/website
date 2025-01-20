@@ -123,7 +123,7 @@ function FooterC() {
 
           <div className="app_footer__content__item__text">
             <Typography variant="p">Recyschool</Typography>
-            <Typography variant="p">Philanbin</Typography>
+            <Typography variant="p">Philan</Typography>
           </div>
         </div>
 
