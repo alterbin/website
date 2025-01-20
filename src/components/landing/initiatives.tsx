@@ -9,18 +9,18 @@ const BASE_URL = '/media/landing/initiatives';
 const initiatives = [
   {
     title: 'Philan',
-    subTitle: 'Mobile Application',
+    subTitle: 'Social Philanthropy',
     src: `${BASE_URL}/philan.jpg`,
-    description: 'A secure online platform for exchanging unwanted items or personal belongings, turning waste into treasures.',
-    linkText: 'Coming soon',
+    description: 'A secure anonymous online platform that connects people who want to give away items they no longer need with those who can reuse or repurpose them. The platform aims to reduce waste and promote sustainability.',
+    linkText: 'Reach out',
     href: undefined,
   },
   {
     title: 'Recyschool',
     subTitle: 'Education',
     src: `${BASE_URL}/recycathon.jpg`,
-    description: 'Supporting education through sensitization and rewarding students for their efforts in waste management projects.',
-    linkText: 'Coming soon',
+    description: 'Supporting education through sensitization and rewarding students for their efforts through showcasing creativity in converting waste into valuables, and in returns they are offer learning incentives.',
+    linkText: 'Reach out',
     href: undefined,
   },
 ];

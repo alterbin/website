@@ -18,7 +18,7 @@ function Food() {
   );
 }
 
-function EcologyRecycle() {
+function EcologyRepurpose() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
       <g clipPath="url(#clip0_59_321)">
@@ -71,7 +71,7 @@ function Healthy() {
 
 const missions = [
   { text: 'Reducing/minimizing <br /> food wastage ', icon: <Food /> },
-  { text: 'Promoting creative <br /> recycling', icon: <EcologyRecycle /> },
+  { text: 'Promoting creative <br /> repurposing', icon: <EcologyRepurpose /> },
   { text: 'Reducing pollution <br /> (land, water, and air)', icon: <PlasticPollution /> },
   { text: 'Encouraging responsible <br /> consumption and <br /> production', icon: <Healthy /> },
 ];

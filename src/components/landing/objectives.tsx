@@ -37,7 +37,7 @@ function ToProlong() {
   );
 }
 
-function ToRecycle() {
+function ToRepurpose() {
   return (
     <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_374_537)">
@@ -70,7 +70,7 @@ function ToSensitize() {
 const objs = [
   { label: 'To minimize waste generation.', icon: <ToMinimize /> },
   { label: 'To prolong the usage of items by transferring ownership.', icon: <ToProlong /> },
-  { label: 'To promotes recycling.', icon: <ToRecycle /> },
+  { label: 'To promotes repurposing.', icon: <ToRepurpose /> },
   { label: 'To raise awareness about the significance of responsible waste management.', icon: <ToSensitize /> },
 ];
 

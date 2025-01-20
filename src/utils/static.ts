@@ -5,7 +5,7 @@ export const metaData = {
   title: 'Alterbin',
   description: 'Alterbin provides creative and innovative initiatives to transform waste for a suitable future.',
   image: `${config.SITE_URL}/media/landing.png`,
-  keywords: 'Waste disposal, Recycling, Solid waste management, Waste collection, Environmental waste management, Trash disposal, Waste reduction, Waste management services, Sustainable waste management, Residential waste management, Green waste management, Municipal waste management, Waste management company, Waste management solutions, Waste management and recycling, Waste management best practices, Waste management guidelines',
+  keywords: 'Waste disposal, Repurposing, Solid waste management, Waste collection, Environmental waste management, Trash disposal, Waste reduction, Waste management services, Sustainable waste management, Residential waste management, Green waste management, Municipal waste management, Waste management company, Waste management solutions, Waste management and repurposing, Waste management best practices, Waste management guidelines',
   url: config.SITE_URL,
   geo: {
     placeName: 'Lagos',

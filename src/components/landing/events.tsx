@@ -9,7 +9,7 @@ const BASE_URL = '/media/landing/events';
 
 const upcomingEvents = [
   {
-    date: new Date('November 14, 2024 23:59:59'), title: 'Urban Day Secondary 2 Ibadan Recyschool (Edition 2024)', desc: 'Sensitizing the students on creative recycling practices that are lucrative. Introducing students to the business of waste thus encouraging the reimagination waste as a valuable resource.', src: `${BASE_URL}/3.jpg`,
+    date: new Date('November 14, 2024 23:59:59'), title: 'Urban Day Secondary 2 Ibadan Recyschool (Edition 2024)', desc: 'Sensitizing the students on creative repurposing practices that are lucrative. Introducing students to the business of waste thus encouraging the reimagination waste as a valuable resource.', src: `${BASE_URL}/3.jpg`,
   },
 ];
 
