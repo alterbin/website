@@ -6,7 +6,7 @@ import Typography from '../shared/typography';
 import Socials from '../shared/socials';
 import { Arrow } from '../svgs/arrows';
 
-const { hash } = staticRoutes.recycathon;
+const { hash } = staticRoutes.recyschool;
 
 const routes = [
   { label: 'About Us', href: `#${hash.aboutUs}` },
@@ -59,7 +59,7 @@ function Routes({ mobile = false }) {
 function Main() {
   return (
     <div className="w-100 d-flex justify-content-between align-items-center rounded-pill navbar__content">
-      <Link href={staticRoutes.recycathon.path}>
+      <Link href={staticRoutes.recyschool.path}>
         <Image className="app__header__logo" src="/media/logos/h-logo2.svg" width={147} height={35} alt="" priority />
       </Link>
 
@@ -78,7 +78,7 @@ function MobileMenu() {
   if (!showMobileMenu) return null;
 
   return (
-    <div className="recycathon__header__mobile_menu_content">
+    <div className="recyschool__header__mobile_menu_content">
       <div className="d-flex flex-column align-items-center">
         <Routes mobile />
 
@@ -102,7 +102,7 @@ export default function Navbar() {
   const { state: { showMobileMenu } } = useGlobalContext();
 
   return (
-    <header className={`recycathon__header ${showMobileMenu ? 'recycathon__header--show_mobile_menu' : ''} recycathon_landing_page__px`}>
+    <header className={`recyschool__header ${showMobileMenu ? 'recyschool__header--show_mobile_menu' : ''} recyschool_landing_page__px`}>
       <Main />
 
       <MobileMenu />

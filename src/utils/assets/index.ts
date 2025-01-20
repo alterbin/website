@@ -1,7 +1,7 @@
 import logos from './logos';
 import objectives from './objectives';
-import recycathon from './recycathon';
+import recyschool from './recyschool';
 
-const assets = { logos, objectives, recycathon };
+const assets = { logos, objectives, recyschool };
 
 export default assets;

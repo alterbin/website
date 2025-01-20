@@ -14,9 +14,9 @@ export const metaData = {
   },
 };
 
-export const recycathonMetaData = {
+export const recyschoolMetaData = {
   ...metaData,
-  siteName: 'Alterbin | Recycathon',
-  title: 'Alterbin | Recycathon',
+  siteName: 'Alterbin | Recyschool',
+  title: 'Alterbin | Recyschool',
   description: 'A competitive solution aimed at addressing waste management challenges and encouraging creative solutions to the issue.',
 };

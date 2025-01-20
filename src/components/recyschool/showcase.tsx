@@ -5,7 +5,7 @@ import Particle from './showcase-particle/particle';
 
 function Showcase() {
   return (
-    <div className="app_showcase_section app_recycathon_page__px">
+    <div className="app_showcase_section app_recyschool_page__px">
       <div className="app_showcase_section__content m-0">
         <div className="app_showcase_section__content__txt">
           <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
@@ -22,7 +22,7 @@ function Showcase() {
             {' '}
             <br />
             {' '}
-            the recycathon
+            the recyschool
           </Typography>
         </div>
         <a style={{ textDecoration: 'none', visibility: 'hidden' }} href={config.services.google.forms.RECYCATHON_REGISTRATION} target="_blank" rel="noopener noreferrer">

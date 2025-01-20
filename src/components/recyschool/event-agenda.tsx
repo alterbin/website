@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
-import recycathon from '@/utils/assets/recycathon';
+import recyschool from '@/utils/assets/recyschool';
 import { Typography } from '../shared';
 import { Bullet } from '../svgs/bullet';
 
 function EventAgenda() {
   return (
     <div className="app_eventagenda_section">
-      <div className="app_eventagenda_section__content app_recycathon_page__px">
+      <div className="app_eventagenda_section__content app_recyschool_page__px">
         <div className="app_eventagenda_section__content__txt">
           <Typography
             variant="h3"
@@ -69,7 +69,7 @@ function EventAgenda() {
           </div>
         </div>
         <Image
-          src={recycathon.aboutEvent1}
+          src={recyschool.aboutEvent1}
           alt=" event agenda"
           className="app_eventagenda_section__img_ct"
           priority

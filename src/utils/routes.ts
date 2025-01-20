@@ -9,8 +9,8 @@ const routes = {
       initiatives: 'initiatives',
     },
   },
-  recycathon: {
-    path: '/recycathon',
+  recyschool: {
+    path: '/recyschool',
 
     hash: {
       aboutUs: 'about-us',

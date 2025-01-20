@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
-import { recycathonMetaData } from '@/utils/static';
+import { recyschoolMetaData } from '@/utils/static';
 import { getMetadata } from '@/utils';
 
-export const metadata: Metadata = getMetadata(recycathonMetaData);
+export const metadata: Metadata = getMetadata(recyschoolMetaData);
 
 type Props = {
   children: ReactNode

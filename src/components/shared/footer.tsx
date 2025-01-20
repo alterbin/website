@@ -33,9 +33,9 @@ function FooterC() {
 
   const pathname = usePathname();
 
-  const isRecycathon = routes.recycathon.path === pathname;
+  const isRecyschool = routes.recyschool.path === pathname;
 
-  const WEB_APP_URL = isRecycathon ? RECYCATHON_WEB_APP_URL : MAIN_WEB_APP_URL;
+  const WEB_APP_URL = isRecyschool ? RECYCATHON_WEB_APP_URL : MAIN_WEB_APP_URL;
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -122,11 +122,8 @@ function FooterC() {
           </Typography>
 
           <div className="app_footer__content__item__text">
-            <a href={routes.recycathon.path} style={{ color: '#fefefe' }}>
-              <Typography variant="p">Recycathon</Typography>
-            </a>
-            <Typography variant="p">Philan Mobile App</Typography>
-            <Typography variant="p">Marketplace</Typography>
+            <Typography variant="p">Recyschool</Typography>
+            <Typography variant="p">Philanbin</Typography>
           </div>
         </div>
 

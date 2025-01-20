@@ -15,7 +15,7 @@ const upcomingEvents = [
 
 const pastEvents = [
   {
-    date: new Date('November 1, 2023 23:59:59'), title: 'Basorun High School Ibadan Getting Started With Recycathon (Edition 2023)', desc: 'Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges, while also learning about the importance of sustainable practices.', src: `${BASE_URL}/bashorun.jpg`,
+    date: new Date('November 1, 2023 23:59:59'), title: 'Basorun High School Ibadan Getting Started With Recyschool (Edition 2023)', desc: 'Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges, while also learning about the importance of sustainable practices.', src: `${BASE_URL}/bashorun.jpg`,
   },
 ];
 

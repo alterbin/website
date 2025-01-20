@@ -4,24 +4,25 @@ import routes from '../../utils/routes';
 import { Arrow } from '../svgs';
 import { Typography } from '../shared';
 
+const { hash } = routes.home;
 const BASE_URL = '/media/landing/initiatives';
 
 const initiatives = [
   {
-    title: 'Philan',
+    title: 'Philanbin',
     subTitle: 'Social Philanthropy',
     src: `${BASE_URL}/philan.jpg`,
-    description: 'A secure anonymous online platform that connects people who want to give away items they no longer need with those who can reuse or repurpose them. The platform aims to reduce waste and promote sustainability.',
+    description: 'Encouraging and enabling the giving away of items people no longer need to those who can reuse or repurpose them, thus reducing waste and promoting sustainability.',
     linkText: 'Reach out',
-    href: undefined,
+    href: `#${hash.contactUs}`,
   },
   {
     title: 'Recyschool',
     subTitle: 'Education',
-    src: `${BASE_URL}/recycathon.jpg`,
-    description: 'Supporting education through sensitization and rewarding students for their efforts through showcasing creativity in converting waste into valuables, and in returns they are offer learning incentives.',
+    src: `${BASE_URL}/recyschool.jpg`,
+    description: 'Supporting education through sensitization and offering of learning incentives to students showcasing creativity in converting waste into valuables.',
     linkText: 'Reach out',
-    href: undefined,
+    href: `#${hash.contactUs}`,
   },
 ];
 

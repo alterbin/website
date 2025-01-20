@@ -46,7 +46,7 @@ function Volunteers() {
 const details = [
   { value: '3', desc: 'Creative Awareness Program', icon: <Awareness /> },
   { value: '621', desc: 'Students Sensitized on repurposing', icon: <Students /> },
-  { value: '+1000kg', desc: 'Repurposed Waste Materials', icon: <Repurposed /> },
+  { value: '800kg', desc: 'Repurposed Waste Materials', icon: <Repurposed /> },
   { value: '05', desc: 'Alterbin Volunteers', icon: <Volunteers /> },
 ];
 

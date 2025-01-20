@@ -1,6 +1,6 @@
 'use client';
 
-import { recycathonMetaData } from '@/utils/static';
+import { recyschoolMetaData } from '@/utils/static';
 import { Footer, Metas, Navbar } from '../../components';
 import {
   AboutEvent,
@@ -8,15 +8,15 @@ import {
   Competition,
   Showcase,
   Hero,
-} from '../../components/recycathon';
+} from '../../components/recyschool';
 import { Provider } from '../../contexts/global';
 
 export default function Page() {
   return (
     <Provider>
-      <Metas data={recycathonMetaData} />
+      <Metas data={recyschoolMetaData} />
 
-      <main className="app_landing_page app_recycathon_page">
+      <main className="app_landing_page app_recyschool_page">
         <Navbar variant="light" />
 
         <Hero />

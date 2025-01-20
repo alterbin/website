@@ -55,16 +55,16 @@ function CountTimer() {
   }
 
   return (
-    <div className="recycathon__hero__section__countdown">
+    <div className="recyschool__hero__section__countdown">
       <Typography
         fontFamily="TrenchSlab"
         variant="h5"
         fontWeight="bd"
-        className="recycathon__hero__section__countdown__h5"
+        className="recyschool__hero__section__countdown__h5"
       >
         Count Every Seconds Until The Event
       </Typography>
-      <div className="recycathon__hero__section__countdown__counter">
+      <div className="recyschool__hero__section__countdown__counter">
         <div>
           <Typography fontFamily="TrenchSlab" variant="h1" fontWeight="sb">
             {formatCountdownValue(countdown.days)}
@@ -107,14 +107,14 @@ function CountTimer() {
 
 export default function Hero() {
   return (
-    <div className="recycathon_hero_section">
-      <div className="recycathon_hero_section__container recycathon_landing_page__px">
-        <div className="recycathon_hero_section__container__content">
-          <div className="recycathon_hero_section__container__content__blur_circle">
+    <div className="recyschool_hero_section">
+      <div className="recyschool_hero_section__container recyschool_landing_page__px">
+        <div className="recyschool_hero_section__container__content">
+          <div className="recyschool_hero_section__container__content__blur_circle">
             <Typography
               variant="h1"
               fontFamily="TrenchSlab"
-              className="recycathon_hero_section__container__content__blur_circle__h1"
+              className="recyschool_hero_section__container__content__blur_circle__h1"
             >
               31st
             </Typography>
@@ -124,39 +124,39 @@ export default function Hero() {
             <Typography
               variant="p"
               fontFamily="TrenchSlab"
-              className="recycathon_hero_section__container__content__blur_circle__p"
+              className="recyschool_hero_section__container__content__blur_circle__p"
             >
               12:00pm-4:30pm
             </Typography>
           </div>
-          <div className="recycathon_hero_section__container__content__txt">
+          <div className="recyschool_hero_section__container__content__txt">
             <Typography
               variant="h1"
               fontFamily="TrenchSlab"
-              className="recycathon_hero_section__container__content__txt__h1"
+              className="recyschool_hero_section__container__content__txt__h1"
             >
               A competitive solution to waste management challenges.
             </Typography>
             <Typography
               variant="h5"
               id={routes.home.hash.aboutUs}
-              className="recycathon_hero_section__container__content__txt__p"
+              className="recyschool_hero_section__container__content__txt__p"
             >
               {/* eslint-disable-next-line max-len */}
               An exciting intra-school competition aimed at addressing waste management challenges and encouraging creative solutions to the issue.
             </Typography>
-            <div className="recycathon_hero_section__container__content__txt__btn">
+            <div className="recyschool_hero_section__container__content__txt__btn">
               <a href={config.services.google.forms.RECYCATHON_REGISTRATION} target="_blank" rel="noopener noreferrer">
                 <button
                   type="button"
-                  className="recycathon_hero_section__container__content__txt__btn1"
+                  className="recyschool_hero_section__container__content__txt__btn1"
                 >
                   Register
                 </button>
               </a>
               <button
                 type="button"
-                className="recycathon_hero_section__container__content__txt__btn2"
+                className="recyschool_hero_section__container__content__txt__btn2"
               >
                 Learn More
               </button>
@@ -164,7 +164,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="recycathon_hero_section__timer">
+      <div className="recyschool_hero_section__timer">
         <CountTimer />
       </div>
     </div>

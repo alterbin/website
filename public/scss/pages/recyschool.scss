@@ -1,4 +1,4 @@
-.app_recycathon_page {
+.app_recyschool_page {
   background-color: #f3f9f9;
   min-height: 100%;
   // padding-top: 10px;
@@ -27,7 +27,7 @@
   --button-text-color: #ffffff;
 }
 
-.recycathon__header {
+.recyschool__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,11 +131,11 @@
   }
 }
 
-.recycathon_hero_section {
+.recyschool_hero_section {
   min-height: calc(100vh - 10px);
   padding-top: calc(85px + 20px); // 85px - header height
   padding-bottom: calc(85px + 20px); // 85px - header height
-  background-image: url('/media/recycathon/heroBg.jpg');
+  background-image: url('/media/recyschool/heroBg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -273,7 +273,7 @@
   }
 }
 
-.recycathon__hero__section__countdown {
+.recyschool__hero__section__countdown {
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 100px;

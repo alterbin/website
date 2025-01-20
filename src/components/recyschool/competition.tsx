@@ -8,7 +8,7 @@ import { Bullet } from '../svgs/bullet';
 function Award() {
   return (
     <div className="app_award_section">
-      <div className="app_award_section__content app_recycathon_page__px">
+      <div className="app_award_section__content app_recyschool_page__px">
         <div className="app_award_section__content__text">
           <Typography
             variant="p"
@@ -21,7 +21,7 @@ function Award() {
           </Typography>
           <Typography fontFamily="TrenchSlab" variant="h1">
             {' '}
-            Recycathon Champions Get Rewarded For
+            Recyschool Champions Get Rewarded For
             {' '}
             <br />
             <span className="d-flex justify-content-center">
@@ -37,7 +37,7 @@ function Award() {
               <Typography fontFamily='TrenchSlab' variant='h4'>1st Runner Up</Typography>
             </div> */}
             <Image
-              src={assets.recycathon.second}
+              src={assets.recyschool.second}
               alt="winner"
               priority
               className="app_award_section__content__performance__img"
@@ -58,7 +58,7 @@ function Award() {
               <Typography fontFamily='TrenchSlab' color='sec-color' variant='h4'>Winner</Typography>
             </div> */}
             <Image
-              src={assets.recycathon.winner}
+              src={assets.recyschool.winner}
               alt="winner"
               priority
               className="app_award_section__content__performance__img_winner"
@@ -79,7 +79,7 @@ function Award() {
               <Typography fontFamily='TrenchSlab' variant='h4'>2nd Runner Up</Typography>
             </div> */}
             <Image
-              src={assets.recycathon.third}
+              src={assets.recyschool.third}
               alt="winner"
               priority
               className="app_award_section__content__performance__img"
@@ -103,7 +103,7 @@ function Award() {
 function Judges() {
   return (
     <div className="app_judges_section">
-      <div className="app_judges_section__content app_recycathon_page__px">
+      <div className="app_judges_section__content app_recyschool_page__px">
         <div className="app_judges_section__content__text">
           <Typography
             variant="P-XXS"
@@ -129,7 +129,7 @@ function Judges() {
         <div className="app_judges_section__content__container">
           <div className="app_judges_section__content__img">
             <Image
-              src={assets.recycathon.judge1}
+              src={assets.recyschool.judge1}
               alt=""
               priority
               className="app_judges_section__content__img_ct"
@@ -143,7 +143,7 @@ function Judges() {
           </div>
           <div className="app_judges_section__content__img">
             <Image
-              src={assets.recycathon.judge2}
+              src={assets.recyschool.judge2}
               alt=""
               priority
               className="app_judges_section__content__img_ct"
@@ -157,7 +157,7 @@ function Judges() {
           </div>
           <div className="app_judges_section__content__img">
             <Image
-              src={assets.recycathon.judge3}
+              src={assets.recyschool.judge3}
               alt=""
               priority
               className="app_judges_section__content__img_ct"
