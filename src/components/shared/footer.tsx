@@ -19,11 +19,12 @@ function Union() {
 }
 
 function FooterBtm() {
+  const footNote = `Copyright © ${(new Date().getFullYear())} Alterbin Technologies`;
   return (
     <>
       <Socials />
 
-      <Typography variant="span">Copyright © 2023 Alterbin Technologies</Typography>
+      <Typography variant="span">{footNote}</Typography>
     </>
   );
 }
