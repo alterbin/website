@@ -4,7 +4,6 @@ import routes from '../../utils/routes';
 import { Arrow } from '../svgs';
 import { Typography } from '../shared';
 
-const { hash } = routes.home;
 const BASE_URL = '/media/landing/initiatives';
 
 const initiatives = [
@@ -13,16 +12,16 @@ const initiatives = [
     subTitle: 'Social Philanthropy',
     src: `${BASE_URL}/philan.jpg`,
     description: 'Encouraging and enabling the giving away of items people no longer need to those who can reuse or repurpose them, thus reducing waste and promoting sustainability.',
-    linkText: 'Reach out',
-    href: `#${hash.contactUs}`,
+    linkText: 'Learn more',
+    href: 'https://philan.alterbin.com',
   },
   {
     title: 'Recyschool',
     subTitle: 'Education',
     src: `${BASE_URL}/recyschool.jpg`,
     description: 'Supporting education through sensitization and offering of learning incentives to students showcasing creativity in converting waste into valuables.',
-    linkText: 'Reach out',
-    href: `#${hash.contactUs}`,
+    linkText: 'Learn more',
+    href: 'https://recyschool.alterbin.com',
   },
 ];
 
@@ -67,7 +66,7 @@ export default function Initiatives() {
 
                 <div className="d-flex justify-content-end">
                   {item.href ? (
-                    <Link className="app_hero_section__content__txt__action" href={item.href || ''}>
+                    <Link className="app_hero_section__content__txt__action" href={item.href || ''} target="_blank">
                       <Typography variant="span">
                         {item.linkText}
                       </Typography>
