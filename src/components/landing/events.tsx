@@ -7,7 +7,11 @@ import { Typography } from '../shared';
 
 const BASE_URL = '/media/landing/events';
 
-const upcomingEvents = [];
+const upcomingEvents = [
+  {
+    date: new Date(), title: '', desc: '', src: `${BASE_URL}/3.jpg`,
+  },
+];
 
 const pastEvents = [
   {
@@ -160,7 +164,7 @@ function Organizations() {
 }
 
 export default function Events() {
-  const [activeEvent, setActiveEvent] = useState<'Upcoming' | 'Past'>('Upcoming');
+  const [activeEvent, setActiveEvent] = useState<'Upcoming' | 'Past'>('Past');
 
   const events = activeEvent === 'Upcoming' ? upcomingEvents : pastEvents;
 
@@ -178,12 +182,12 @@ export default function Events() {
           </Typography>
 
           <div className="app_events__con__evt d-flex justify-content-center">
-            <div role="none" onClick={() => setActiveEvent('Past')} className={`cursor-pointer app_events__con__evt_a${activeEvent === 'Past' ? '' : '--disabled'}`}>
-              <Typography color="sec-color" variant="span">Past Events</Typography>
-            </div>
-
             <div role="none" onClick={() => setActiveEvent('Upcoming')} className={`cursor-pointer app_events__con__evt_a${activeEvent === 'Upcoming' ? '' : '--disabled'}`}>
               <Typography color="sec-color" variant="span">Upcoming Events</Typography>
+            </div>
+
+            <div role="none" onClick={() => setActiveEvent('Past')} className={`cursor-pointer app_events__con__evt_a${activeEvent === 'Past' ? '' : '--disabled'}`}>
+              <Typography color="sec-color" variant="span">Past Events</Typography>
             </div>
           </div>
         </div>
