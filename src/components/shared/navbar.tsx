@@ -11,7 +11,7 @@ const { hash } = staticRoutes.home;
 
 const routes = [
   { label: 'About Us', href: `#${hash.aboutUs}` },
-  { label: 'Initiatives', href: `/#${hash.initiatives}` },
+  { label: 'Projects', href: `/#${hash.projects}` },
   { label: 'Events', href: `/#${hash.events}` },
   { label: 'Contact', href: `#${hash.contactUs}` },
 ];

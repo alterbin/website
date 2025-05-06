@@ -2,7 +2,7 @@
 
 import { Footer, Navbar } from '../components';
 import {
-  Events, Hero, Initiatives, Mission, Objectives, Stats,
+  Events, Hero, Projects, Mission, Objectives, Stats,
 } from '../components/landing';
 import { Provider } from '../contexts/global';
 
@@ -18,7 +18,7 @@ export default function Page() {
 
         <Objectives />
 
-        <Initiatives />
+        <Projects />
 
         <Stats />
 

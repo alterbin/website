@@ -6,7 +6,7 @@ const routes = {
       aboutUs: 'about-us',
       contactUs: 'contact-us',
       events: 'events',
-      initiatives: 'initiatives',
+      projects: 'projects',
     },
   },
 };

@@ -7,13 +7,12 @@ import { Typography } from '../shared';
 
 const BASE_URL = '/media/landing/events';
 
-const upcomingEvents = [
+const upcomingEvents = [];
+
+const pastEvents = [
   {
     date: new Date('November 14, 2024 23:59:59'), title: 'Urban Day Secondary 2 Ibadan Recyschool (Edition 2024)', desc: 'Sensitizing the students on creative repurposing practices that are lucrative. Introducing students to the business of waste thus encouraging the reimagination waste as a valuable resource.', src: `${BASE_URL}/3.jpg`,
   },
-];
-
-const pastEvents = [
   {
     date: new Date('November 1, 2023 23:59:59'), title: 'Basorun High School Ibadan Getting Started With Recyschool (Edition 2023)', desc: 'Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges, while also learning about the importance of sustainable practices.', src: `${BASE_URL}/bashorun.jpg`,
   },
@@ -113,6 +112,12 @@ function Uber() {
   );
 }
 
+function WARMFoundation() {
+  return (
+    <Image style={{ width: 162 }} src={landing.warmfoundation} alt="heyfood" />
+  );
+}
+
 function Crop2Cash() {
   return (
     <svg width="229" height="33" viewBox="0 0 229 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,7 +134,7 @@ function Crop2Cash() {
 
 function HeyFood() {
   return (
-    <Image style={{ width: 162 }} src={landing.heyfood} alt="heyfood" />
+    <Image style={{ width: 175, height: 33 }} src={landing.heyfood} alt="heyfood" />
   );
 }
 
@@ -147,6 +152,7 @@ function Organizations() {
         </>
       )}
 
+      <WARMFoundation />
       <Crop2Cash />
       <HeyFood />
     </div>
@@ -172,12 +178,12 @@ export default function Events() {
           </Typography>
 
           <div className="app_events__con__evt d-flex justify-content-center">
-            <div role="none" onClick={() => setActiveEvent('Upcoming')} className={`cursor-pointer app_events__con__evt_a${activeEvent === 'Upcoming' ? '' : '--disabled'}`}>
-              <Typography color="sec-color" variant="span">Upcoming Events</Typography>
-            </div>
-
             <div role="none" onClick={() => setActiveEvent('Past')} className={`cursor-pointer app_events__con__evt_a${activeEvent === 'Past' ? '' : '--disabled'}`}>
               <Typography color="sec-color" variant="span">Past Events</Typography>
+            </div>
+
+            <div role="none" onClick={() => setActiveEvent('Upcoming')} className={`cursor-pointer app_events__con__evt_a${activeEvent === 'Upcoming' ? '' : '--disabled'}`}>
+              <Typography color="sec-color" variant="span">Upcoming Events</Typography>
             </div>
           </div>
         </div>

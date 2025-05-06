@@ -18,7 +18,7 @@ function Union() {
 }
 
 function FooterBtm() {
-  const footNote = `Copyright © ${(new Date().getFullYear())} Alterbin Technologies`;
+  const footNote = `Copyright © ${(new Date().getFullYear())} W.A.R.M Foundation`;
   return (
     <>
       <Socials />
@@ -114,7 +114,7 @@ function FooterC() {
 
         <div className="app_footer__content__item">
           <Typography fontWeight="bd" variant="h5">
-            Our Initiatives
+            Our Projects
           </Typography>
 
           <div className="app_footer__content__item__text">

@@ -57,7 +57,7 @@ export default function Stats() {
         <p className="app_stats__p">
           “At Alterbin, we believe that knowledge is the first step toward
           creating positive change. Here are some statistics that highlight how we are pushing for
-          effective waste management and repurposing initiatives”
+          effective waste management and repurposing projects”
         </p>
 
         <div className="app_stats__details">

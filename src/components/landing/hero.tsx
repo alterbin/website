@@ -21,7 +21,7 @@ export default function Hero() {
 
           <Typography className="app_hero_section__content__txt__p">
             {/* eslint-disable-next-line max-len */}
-            Alterbin provides creative and innovative initiatives to transform waste for a suitable future.
+            An initiative of W.A.R.M Foundation that provides creative and innovative projects to transform waste for a suitable future.
           </Typography>
 
           {false && (
