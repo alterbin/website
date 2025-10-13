@@ -118,23 +118,32 @@ function Uber() {
 
 function WARMFoundation() {
   return (
-    <Image style={{
-        width: "100%",
-        maxWidth: "175px",
-        height: "auto",
-        objectFit: "contain",
-        mixBlendMode: "multiply", 
-      }} src={landing.warmfoundation} alt="warmfoundation" />
+    <Image
+      style={{
+        width: '100%',
+        maxWidth: '175px',
+        height: 'auto',
+        objectFit: 'contain',
+        mixBlendMode: 'multiply',
+      }}
+      src={landing.warmfoundation}
+      alt="warmfoundation"
+    />
   );
 }
 
 function Crop2Cash() {
   return (
-    <svg style={{
-        width: "100%",
-        maxWidth: "229px",
-        height: "auto",
-      }} viewBox="0 0 229 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      style={{
+        width: '100%',
+        maxWidth: '229px',
+        height: 'auto',
+      }}
+      viewBox="0 0 229 33"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect y="-5" width="228.03" height="43" fill="url(#pattern0)" />
       <defs>
         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -148,12 +157,16 @@ function Crop2Cash() {
 
 function HeyFood() {
   return (
-    <Image style={{
-        width: "100%",
-        maxWidth: "175px",
-        height: "auto",
-        objectFit: "contain",
-      }} src={landing.heyfood} alt="heyfood" />
+    <Image
+      style={{
+        width: '100%',
+        maxWidth: '175px',
+        height: 'auto',
+        objectFit: 'contain',
+      }}
+      src={landing.heyfood}
+      alt="heyfood"
+    />
   );
 }
 
@@ -254,14 +267,14 @@ export default function Events() {
       </div>
 
       <div
-  style={{
-    display: "flex",
-    justifyContent: "center",
-    paddingInline: "16px",
-  }}
->
-  <Organizations />
-</div>
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          paddingInline: '16px',
+        }}
+      >
+        <Organizations />
+      </div>
     </div>
   );
 }
