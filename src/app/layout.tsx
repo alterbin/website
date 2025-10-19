@@ -7,6 +7,7 @@ import '../../public/scss/main.scss';
 
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import generateColorsCss from '@/utils/colors';
 import { Metas } from '@/components/shared/metas';
 import { ReactNode } from 'react';
@@ -17,8 +18,8 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = getMetadata();
 
 type Props = {
-  children: ReactNode
-}
+  children: ReactNode;
+};
 
 export default function RootLayout({ children }: Props) {
   return (
@@ -27,7 +28,21 @@ export default function RootLayout({ children }: Props) {
         <style>{generateColorsCss()}</style>
       </Metas>
 
-      <body suppressHydrationWarning className={inter.className}>{children}</body>
+      <body suppressHydrationWarning className={inter.className}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PRP8WFVP0K"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PRP8WFVP0K');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
