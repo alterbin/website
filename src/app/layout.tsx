@@ -7,7 +7,6 @@ import '../../public/scss/main.scss';
 
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Script from 'next/script';
 import generateColorsCss from '@/utils/colors';
 import { Metas } from '@/components/shared/metas';
 import { ReactNode } from 'react';
@@ -30,18 +29,6 @@ export default function RootLayout({ children }: Props) {
       </Metas>
 
       <body suppressHydrationWarning className={inter.className}>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-PRP8WFVP0K"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-PRP8WFVP0K');
-          `}
-        </Script>
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''} />
         {children}
       </body>
