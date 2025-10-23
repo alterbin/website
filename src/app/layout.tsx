@@ -12,6 +12,7 @@ import generateColorsCss from '@/utils/colors';
 import { Metas } from '@/components/shared/metas';
 import { ReactNode } from 'react';
 import { getMetadata } from '@/utils';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: Props) {
             gtag('config', 'G-PRP8WFVP0K');
           `}
         </Script>
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''} />
         {children}
       </body>
     </html>
