@@ -8,12 +8,12 @@ const BASE_URL = '/media/landing/projects';
 
 const projects = [
   {
-    title: 'Philan',
+    title: 'Optimal',
     subTitle: 'Social Philanthropy',
-    src: `${BASE_URL}/philan.jpg`,
+    src: `${BASE_URL}/optimal.jpg`,
     description: 'Encouraging and enabling the giving away of items people no longer need to those who can reuse or repurpose them, thus reducing waste and promoting sustainability.',
     linkText: 'Learn more',
-    href: 'https://philan.alterbin.com',
+    href: 'https://optimal.alterbin.com',
   },
   {
     title: 'Recyschool',
