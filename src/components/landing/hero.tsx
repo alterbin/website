@@ -11,17 +11,18 @@ export default function Hero() {
       <div className="app_hero_section__content app_landing_page__px">
         <div className="app_hero_section__content__txt">
           <Typography className="app_hero_section__content__txt__h1" fontFamily="TrenchSlab" fontWeight="md" variant="h1">
-            Fostering
+            Advancing
             {' '}
             <br className="d-none d-lg-flex" />
-            <span>solutions</span>
+            <span>circular solutions</span>
             {' '}
-            for waste management challenges.
+            for waste challenges.
           </Typography>
 
           <Typography className="app_hero_section__content__txt__p">
-            {/* eslint-disable-next-line max-len */}
-            An initiative of W.A.R.M Foundation that provides creative and innovative projects to transform waste for a suitable future.
+            An initiative of the Waste As Raw Material (W.A.R.M) Foundation,
+            {' '}
+            turning waste into value through practical circular programs.
           </Typography>
 
           {false && (

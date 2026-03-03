@@ -57,9 +57,9 @@ export function Metas(props: IProps) {
       <meta name="language" content="English" />
 
       {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="" />
-      <meta itemProp="description" content={data?.description} />
-      <meta itemProp="image" content={data?.image} />
+      <meta itemProp="name" content={data?.title || metaData.title} />
+      <meta itemProp="description" content={data?.description || metaData.description} />
+      <meta itemProp="image" content={data?.image || metaData.image} />
       {/* Google / Search Engine Tags Ends */}
 
       {/* Facebook Meta Tags */}
@@ -85,8 +85,8 @@ export function Metas(props: IProps) {
       />
       <meta name="twitter:image" content={data?.twitter?.image || data?.image || metaData.image} key="twitter image" />
 
-      <meta name="twitter:site" content="@content" />
-      <meta name="twitter:creator" content="@content" />
+      <meta name="twitter:site" content={metaData.twitterHandle || ''} />
+      <meta name="twitter:creator" content={metaData.twitterHandle || ''} />
       {/* Twitter Meta Tags Ends */}
 
       <meta name="geo.placename" content={metaData.geo.placeName} />

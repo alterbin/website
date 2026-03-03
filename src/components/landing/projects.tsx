@@ -11,7 +11,7 @@ const projects = [
     title: 'Optimal',
     subTitle: 'Social Philanthropy',
     src: `${BASE_URL}/optimal.jpg`,
-    description: 'Encouraging and enabling the giving away of items people no longer need to those who can reuse or repurpose them, thus reducing waste and promoting sustainability.',
+    description: 'A giving platform that helps people pass on useful items they no longer need, keeping materials in use and reducing avoidable waste.',
     linkText: 'Learn more',
     href: 'https://optimal.alterbin.com',
   },
@@ -19,7 +19,7 @@ const projects = [
     title: 'Recyschool',
     subTitle: 'Education',
     src: `${BASE_URL}/recyschool.jpg`,
-    description: 'Supporting education through sensitization and offering of learning incentives to students showcasing creativity in converting waste into valuables.',
+    description: 'A school-based program that equips students with circular-thinking skills and rewards creative projects that transform waste into useful products.',
     linkText: 'Learn more',
     href: 'https://recyschool.alterbin.com',
   },
@@ -34,10 +34,10 @@ export default function Projects() {
         </Typography>
 
         <Typography className="app_mission__top__p">
-          Discover Our Comprehensive Portfolio of Sustainable Projects and Impactful Projects.
+          Explore initiatives that turn circular-economy ideas into practical community outcomes.
           {' '}
           <br />
-          Explore Our Sustainable Projects.
+          Built to reduce waste, create value, and inspire action.
         </Typography>
       </div>
 

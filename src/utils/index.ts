@@ -7,10 +7,13 @@ export function wipAlert() {
 
 export function getMetadata(metaData = staticMetaData) {
   return {
-    title: metaData.siteName,
+    title: metaData.title,
     description: metaData.description,
     openGraph: {
-      ...metaData,
+      title: metaData.title,
+      description: metaData.description,
+      url: metaData.url,
+      siteName: metaData.siteName,
       type: 'website',
       images: [{
         url: metaData.image,
@@ -18,8 +21,8 @@ export function getMetadata(metaData = staticMetaData) {
     },
     twitter: {
       card: 'summary_large_image',
-      site: `@${metaData.url}`,
-      creator: `@${metaData.siteName}`,
+      site: metaData.twitterHandle || undefined,
+      creator: metaData.twitterHandle || undefined,
       images: metaData.image,
     },
   };

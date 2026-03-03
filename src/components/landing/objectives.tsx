@@ -68,10 +68,10 @@ function ToSensitize() {
 }
 
 const objs = [
-  { label: 'To minimize waste generation.', icon: <ToMinimize /> },
-  { label: 'To prolong the usage of items by transferring ownership.', icon: <ToProlong /> },
-  { label: 'To promotes repurposing.', icon: <ToRepurpose /> },
-  { label: 'To raise awareness about the significance of responsible waste management.', icon: <ToSensitize /> },
+  { label: 'Minimize waste generation at source.', icon: <ToMinimize /> },
+  { label: 'Extend product life through reuse and responsible transfer of ownership.', icon: <ToProlong /> },
+  { label: 'Promote practical and creative repurposing.', icon: <ToRepurpose /> },
+  { label: 'Build awareness of responsible waste practices in everyday life.', icon: <ToSensitize /> },
 ];
 
 export default function Objectives() {
