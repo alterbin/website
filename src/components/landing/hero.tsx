@@ -20,7 +20,9 @@ export default function Hero() {
           </Typography>
 
           <Typography className="app_hero_section__content__txt__p">
-            An initiative of the Waste As Raw Material (W.A.R.M) Foundation, turning waste into value through practical circular programs.
+            An initiative of the Waste As Raw Material (W.A.R.M) Foundation,
+            {' '}
+            turning waste into value through practical circular programs.
           </Typography>
 
           {false && (
