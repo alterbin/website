@@ -44,10 +44,10 @@ function Volunteers() {
 }
 
 const details = [
-  { value: '3', desc: 'Creative Awareness Program', icon: <Awareness /> },
-  { value: '621', desc: 'Students Sensitized on repurposing', icon: <Students /> },
-  { value: '3800kg', desc: 'Repurposed Waste Materials', icon: <Repurposed /> },
-  { value: '08', desc: 'Alterbin Volunteers', icon: <Volunteers /> },
+  { value: '3', desc: 'Creative awareness programs delivered', icon: <Awareness /> },
+  { value: '621', desc: 'Students trained on reuse and repurposing', icon: <Students /> },
+  { value: '3,800kg', desc: 'Waste materials diverted for repurposing', icon: <Repurposed /> },
+  { value: '08', desc: 'Active Alterbin volunteers', icon: <Volunteers /> },
 ];
 
 export default function Stats() {
@@ -55,9 +55,9 @@ export default function Stats() {
     <div className="app_stats">
       <div className="app_stats__con app_landing_page__px">
         <p className="app_stats__p">
-          “At Alterbin, we believe that knowledge is the first step toward
-          creating positive change. Here are some statistics that highlight how we are pushing for
-          effective waste management and repurposing projects”
+          “At Alterbin, awareness is only the beginning.
+          We design programs that turn knowledge into practical action—helping people reduce waste,
+          repurpose resources, and build lasting circular-economy habits.”
         </p>
 
         <div className="app_stats__details">

@@ -3,7 +3,7 @@ const config = {
     email: 'hello@alterbin.com',
     phone: '',
   },
-  SITE_URL: 'https://alterbin-website.vercel.app',
+  SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://alterbin-website.vercel.app',
   tokenKey: 'adinoe-tkq',
   services: {
     google: {

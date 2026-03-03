@@ -15,10 +15,10 @@ const upcomingEvents = [
 
 const pastEvents = [
   {
-    date: new Date('November 14, 2024 23:59:59'), title: 'Urban Day Secondary 2 Ibadan Recyschool (Edition 2024)', desc: 'Sensitizing the students on creative repurposing practices that are lucrative. Introducing students to the business of waste thus encouraging the reimagination waste as a valuable resource.', src: `${BASE_URL}/3.jpg`,
+    date: new Date('November 14, 2024 23:59:59'), title: 'Urban Day Secondary 2 Ibadan Recyschool (Edition 2024)', desc: 'Students were trained on practical repurposing approaches and introduced to circular opportunities that treat waste as a resource, not a burden.', src: `${BASE_URL}/3.jpg`,
   },
   {
-    date: new Date('November 1, 2023 23:59:59'), title: 'Basorun High School Ibadan Getting Started With Recyschool (Edition 2023)', desc: 'Onboarding the students from Basorun High School where they will compete to find creative solutions to waste management challenges, while also learning about the importance of sustainable practices.', src: `${BASE_URL}/bashorun.jpg`,
+    date: new Date('November 1, 2023 23:59:59'), title: 'Basorun High School Ibadan Getting Started With Recyschool (Edition 2023)', desc: 'Students were onboarded into Recyschool to explore creative responses to local waste challenges while learning core sustainability and circular-thinking principles.', src: `${BASE_URL}/bashorun.jpg`,
   },
 ];
 
@@ -205,7 +205,7 @@ export default function Events() {
           </Typography>
 
           <Typography className="app_mission__top__p" color="sub-text-color">
-            Making a difference everyday!
+            Creating measurable impact, one community at a time.
             <Blob />
           </Typography>
 
@@ -261,7 +261,7 @@ export default function Events() {
           </Typography>
 
           <Typography className="relative !mb-0" color="sub-text-color">
-            Organizations that strongly believe in our mission
+            Organizations that actively support our circular-economy mission
           </Typography>
         </div>
       </div>

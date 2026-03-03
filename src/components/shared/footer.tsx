@@ -54,13 +54,13 @@ function FooterC() {
       });
 
       if (typeof response === 'object') {
-        toast.success('Successful', { position: 'bottom-right' });
+        toast.success('Thanks for subscribing!', { position: 'bottom-right' });
         emailInput.value = '';
       } else {
         throw new Error('Failed');
       }
     } catch (error: any) {
-      toast.error('Failed', { position: 'bottom-right' });
+      toast.error('Subscription failed. Please try again.', { position: 'bottom-right' });
     } finally {
       setLoading(false);
     }
@@ -104,7 +104,7 @@ function FooterC() {
           />
 
           <Typography variant="span">
-            Creating value for waste.
+            Turning waste into value.
           </Typography>
 
           <a href={`mailto:${config.CONTACT_US.email}`} style={{ color: '#fefefe' }}>
@@ -146,8 +146,8 @@ function FooterC() {
 
           <div>
             <Typography variant="span" fontWeight="lt">
-              Join our mailing list to stay in the loop on how we are creating a
-              sustainable environment
+              Join our mailing list for updates on our circular-economy programs,
+              impact stories, and upcoming events.
             </Typography>
           </div>
 
@@ -155,7 +155,7 @@ function FooterC() {
             <input
               type="text"
               className="app_footer__content__item__subscribe__input"
-              placeholder="Enter your email address.."
+              placeholder="Enter your email address"
               name="Email"
               required
             />

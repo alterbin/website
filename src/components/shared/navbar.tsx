@@ -13,7 +13,7 @@ const routes = [
   { label: 'About Us', href: `#${hash.aboutUs}` },
   { label: 'Projects', href: `/#${hash.projects}` },
   { label: 'Events', href: `/#${hash.events}` },
-  { label: 'Contact', href: `#${hash.contactUs}` },
+  { label: 'Contact Us', href: `#${hash.contactUs}` },
 ];
 
 function Menu({ className = '' }) {

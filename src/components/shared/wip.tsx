@@ -10,7 +10,7 @@ export default function WIP({ children }: { children: ReactNode }) {
 
       <div className="d-flex d-lg-none justify-content-center align-items-center" style={{ height: 200 }}>
         <Typography color="main-color" variant="h5">
-          Mobile view n/a
+          Mobile view is currently unavailable.
         </Typography>
       </div>
     </>

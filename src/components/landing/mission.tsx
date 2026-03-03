@@ -70,9 +70,9 @@ function Healthy() {
 }
 
 const missions = [
-  { text: 'Reducing/minimizing <br /> food wastage ', icon: <Food /> },
+  { text: 'Reducing and preventing <br /> food waste', icon: <Food /> },
   { text: 'Promoting creative <br /> repurposing', icon: <EcologyRepurpose /> },
-  { text: 'Reducing pollution <br /> (land, water, and air)', icon: <PlasticPollution /> },
+  { text: 'Reducing pollution across <br /> land, water, and air', icon: <PlasticPollution /> },
   { text: 'Encouraging responsible <br /> consumption and <br /> production', icon: <Healthy /> },
 ];
 
@@ -85,11 +85,11 @@ export default function Mission() {
         </Typography>
 
         <Typography className="app_mission__top__p">
-          Our mission is to lead and scale innovations that promote and realize
+          Our mission is to design and scale practical innovations that advance
           {' '}
           <br />
           <span>
-            effective waste management in a sustainable way.
+            circular, community-driven waste management.
             <Blob />
           </span>
         </Typography>
